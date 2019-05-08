@@ -1,0 +1,23 @@
+button#verde{
+    background-color:#90C74C
+}
+button#azul{
+    background-color:#207ABF;
+}
+div.botoes button{
+    margin-bottom:40px;
+    width:250px;
+    height: 70px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    cursor: pointer;
+}
+div.botoes{
+    width: 250px;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
