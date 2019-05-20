@@ -8,12 +8,8 @@ class Cadastro extends CI_Controller{
         $this->load->view('header');
         $this->load->view('botoes_cadastro');
     }
-    public function cadastro_professor(){
+    public function cadastro(){
         $this->load->view('header');
-        $this->load->view('cadastro_professor');
-    }
-    public function cadastro_aluno(){
-        $this->load->view('header');
-        $this->load->view('cadastro_aluno');
+        $this->load->view('cadastro');
     }
 }

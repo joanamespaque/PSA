@@ -5,9 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="<?= base_url();?>assets/css/header.css">
+	<link rel="stylesheet" href="<?= base_url();?>assets/css/header.css" media="all">
 	<link rel="stylesheet" href="<?= base_url();?>assets/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="print.css" type="text/css" media="all">
+	<!-- <link rel="stylesheet" href="print.css" type="text/css" media="all"> -->
 </head>
 
 <body>
@@ -43,11 +43,11 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navBar" id="bs-example-navbar-collapse-1">
 				<ul>
-					<li class="active">
-						<a href="#">INÍCIO</a>
+					<li class="active inicio">
+						<a href="<?= base_url();?>inicio/inicio">INÍCIO</a>
 					</li>
-					<li>
-						<a href="#">SOBRE</a>
+					<li class="sobre">
+						<a href="<?= base_url();?>sobre/sobre">SOBRE</a>
 					</li>
 				</ul>
 			</div>

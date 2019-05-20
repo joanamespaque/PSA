@@ -21,9 +21,6 @@ div.botoes li a{
 a{
     font-size:18px;
     text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 div.botoes li a:hover{
     color:white;
@@ -31,9 +28,6 @@ div.botoes li a:hover{
 div.botoes{
     margin-top:30px;
     width: 330px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 #google{
     background-color: #8C181B;
@@ -44,11 +38,52 @@ div.botoes{
 #facebook{
     background-color: #207ABF;
 }
-form{
-    width: 70%;
+.formulario, label, div.botoes, a{
     display: block;
     margin-left:auto;
     margin-right:auto;
+}
+.formulario{
+    width: 570px;
+}
+label{
+    margin-bottom: -10px;
+    margin-top:20px;
+    text-align: center;
+}
+#form1, #form2{
+    float: left;
+}
+#form2{
+    padding-left: 70px;
+}
+input.form-control{
+    width: 250px;
+    height: 40px;
+    /* margin-left: 25px; */
+}
+.button-cadastro{
+    background-color:#90C74C;
+    margin-top:45px;
+    color:white;
+    border:none;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 615px) {
+    .formulario, div.formulario li{
+        width: 300px;
+    }  
+    div.formulario li input, label, .button-cadastro{
+        display: block;
+        margin-right: auto;
+        margin-left:auto;
+    }
+    #form2{
+        padding-left:0px;
+    }
+    .button-cadastro{
+        margin-top:30px;
+    }
 }
 @media screen and (max-width: 380px) {
     div.botoes li{
@@ -67,5 +102,4 @@ form{
     h2{
         margin-top:0px;
     }
-
 }

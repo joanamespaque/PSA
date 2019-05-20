@@ -1,0 +1,74 @@
+img.logoGTA {
+	width: 380px;
+	height: 380px;
+    float: left;
+    border:solid 1px black;
+}
+
+.divSobre {
+	width: 65%;
+	margin-top: 30px;
+}
+
+#sobreTexto {
+	font-size: 20px;
+	max-width: 55%;
+	float: right;
+	text-align: justify;
+}
+
+@media screen and (max-width: 1300px) {
+	.divSobre {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 1110px) {
+	.divSobre {
+		width: 85%;
+	}
+}
+@media screen and (max-width: 1050px) {
+	.divSobre {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 970px) {
+	.divSobre {
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 940px) {
+    .divSobre {
+        width: 100%;
+    }
+    img.logoGTA {
+        width: 40%;
+        height: 40%;
+        float:none !important;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #sobreTexto{
+        max-width: 70%;
+        margin-top:25px;
+        float:none !important;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    img.logoGTA {
+        width: 55%;
+        height: 55%;
+    }
+}
+@media screen and (max-width: 500px) {
+    #sobreTexto{
+        max-width: 90%;
+    }
+}

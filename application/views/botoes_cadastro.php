@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="<?= base_url();?>/assets/css/header.css">
     <link rel="stylesheet" href="<?= base_url();?>/assets/css/cadastro.css">
-    <title>Página Inicial</title>
+    <title>Cadastro Professor</title>
 </head>
 <body>
     <div class="container">
