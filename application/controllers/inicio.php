@@ -6,11 +6,12 @@ class Inicio extends CI_Controller{
     }
     public function inicio (){
         $this->load->view('header');
+        $this->load->view('nav_inicial');
         $this->load->view('pagina_inicial');
     }
     public function inicio2(){
         $this->load->view('header');
+        $this->load->view('nav_inicial');
         $this->load->view('pagina_inicial2');
-        
     }
 }

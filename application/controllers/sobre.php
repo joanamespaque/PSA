@@ -6,6 +6,7 @@ class Sobre extends CI_Controller{
     }
     public function sobre(){
         $this->load->view('header');
+        $this->load->view('nav_inicial');
         $this->load->view('sobre');
     }
 }

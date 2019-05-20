@@ -1,0 +1,126 @@
+div.botoes li{
+    list-style-type: none;
+    width: 280px;
+    text-align: center;
+    height: 54px;
+    padding-top:14px;
+    margin-bottom:40px;
+    border-radius: 5px;
+    /* padding: 20px 30px 20px 30px; */
+}
+li {
+	list-style-type: none;
+}
+h2{
+    margin-top:10px;
+}
+div.botoes li a{
+    color: white;
+    text-decoration: none;
+}
+a{
+    font-size:18px;
+    text-align: center;
+}
+div.botoes li a:hover{
+    color:white;
+}
+div.botoes{
+    margin-top:30px;
+    width: 280px;
+}
+#google{
+    background-color: #8C181B;
+}
+#facebook{
+    background-color: #207ABF;
+}
+.formulario, label, div.botoes, a, #formLogin, input.form-control{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.formulario{
+    width: 640px;
+    margin-top:40px;
+}
+#form1 p{
+    display: block;
+    margin-top:100px;
+    font-size: 20px;
+    margin-left: 40px;
+}
+label{
+    margin-bottom: -10px;
+    margin-top:20px;
+    text-align: center;
+}
+#form1, #form2{
+    float: left;
+}
+#form2{
+    padding-left: 40px;
+}
+input.form-control{
+    width: 250px;
+    height: 40px;
+    /* margin-left: 25px; */
+}
+.button-cadastro{
+    background-color:#90C74C;
+    margin-top:30px;
+    color:white;
+    border:none;
+    margin-bottom: 30px;
+}
+
+#formLogin input.form-control{
+    width:300px;
+}
+@media screen and (max-width: 650px) {
+    .formulario, div.formulario li{
+        width: 300px;
+    }  
+    div.formulario li input, label, div#form1.botoes ,.button-cadastro{
+        display: block;
+        margin-right: auto;
+        margin-left:auto;
+    }
+    #form2{
+        padding-left:0px;
+    }
+    .button-cadastro{
+        margin-top:30px;
+    }
+    #form1 p{
+        margin-top:0px;
+        width: 300px;
+        text-align: center;
+        margin-left:0px;
+    }
+    input.form-control, div#form1.botoes{
+        width:300px;
+    }
+    div#form1.botoes{
+        margin-top:0px;
+        
+    }
+}
+@media screen and (max-width: 380px) {
+    div.botoes li{
+        width: 280px;
+        margin-bottom:20px;
+    }
+    a{
+        font-size:16px;
+    }
+    div.botoes{
+        width: 280px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h2{
+        margin-top:0px;
+    }
+}
