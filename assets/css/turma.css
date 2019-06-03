@@ -1,0 +1,82 @@
+.turmas{
+    width: 88%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+#turma{
+    width:220px;
+    height: 90px;
+    background-color: #90C74C;
+    border-radius: 10px;
+    float: left;    
+    margin-left:40px;
+    margin-bottom:20px;
+}
+div.button{
+    width: 100%;
+    float:left;
+}
+p, output{
+    color: #515151;
+    text-align: center;
+}
+output, p:hover{
+    text-decoration: none;
+}
+p{
+    font-size: 30px;
+    padding-top:10px;
+}
+output{
+    font-size: 18px;
+    margin-top:-20px;
+}
+#addTurma{
+    display:block;
+    margin-left: auto;
+    margin-right: auto; 
+    background-color:#8C181B;
+    color: white;
+    width: 220px;
+    text-align: center;
+    height: 54px;
+    margin-bottom:40px;
+    border-radius: 10px;
+    border:none;
+    font-size: 17px;
+}
+@media screen and (max-width: 890px) {
+    .turmas{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 820px) {
+    .turmas{
+        width: 100%;
+        display:block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+}
+@media screen and (max-width: 780px) {
+    .turmas{
+        width: 600px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .turmas{
+        width: 500px;
+    }
+    #turma{
+        margin-left:20px;   
+    }
+}
+@media screen and (max-width: 500px) {
+    .turmas{
+        width: 220px;
+    }
+    #turma{
+        margin-left:none;
+    }
+}

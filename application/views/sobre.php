@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="<?= base_url();?>/assets/css/header.css" media="all">
     <link rel="stylesheet" href="<?= base_url();?>/assets/css/sobre.css">
-    <title>Página Inicial</title>
+    <title>Sobre</title>
 </head>
 <body>
     <div class="container divSobre">

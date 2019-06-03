@@ -16,7 +16,11 @@ img.logoGTA {
 	float: right;
 	text-align: justify;
 }
-
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 @media screen and (max-width: 1300px) {
 	.divSobre {
 		width: 80%;

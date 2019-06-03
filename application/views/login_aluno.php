@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="<?= base_url();?>/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= base_url();?>/assets/css/header.css" media="all">
     <link rel="stylesheet" href="<?= base_url();?>/assets/css/login.css">
-    <title>Login Professor</title>
+    <title>Login Aluno</title>
 </head>
 <body>
         <div class="caminho"></div>
