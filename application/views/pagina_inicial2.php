@@ -9,11 +9,26 @@
     <title>Página Inicial</title>
 </head>
 <body>
+<?php //$usuario = $_GET['usuario'];?>
+
+    <!-- <div class="container">
+        <div class="botoes">
+            <form action="<?= base_url();?>login/login_<?= $usuario?>" method="get">
+                <button id="azul" value="cadastro" name="tipo">CADASTRO</button>
+                <button id="verde" value="login" name="tipo">LOGIN</button>
+            </form>
+        </div>
+    </div> -->
+
     <div class="container">
         <div class="botoes">
-            <button id="azul">CADASTRO</button>
-            <button id="verde">LOGIN</button>
+            <form action="<?= base_url();?>inicio/verifica_acao" method="POST">
+                <button id="azul" value="cadastro_<?= $_POST['usuario'];?>" name="tipo">CADASTRO</button>
+                <button id="verde" value="login_<?= $_POST['usuario'];?>" name="tipo">LOGIN</button>
+            </form>
         </div>
     </div>
+
 </body>
 </html>
+

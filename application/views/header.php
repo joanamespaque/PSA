@@ -7,7 +7,6 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="<?= base_url();?>assets/css/header.css" media="all">
 	<link rel="stylesheet" href="<?= base_url();?>assets/bootstrap/css/bootstrap.min.css">
-	<!-- <link rel="stylesheet" href="print.css" type="text/css" media="all"> -->
 </head>
 
 <body>

@@ -11,9 +11,9 @@
 <body>
     <div class="container">
         <div class="botoes">
-            <form action="<?= base_url();?>inicio/inicio2">
-                <button id="verde">PROFESSOR</button>
-                <button id="azul">ALUNO</button>
+            <form action="<?= base_url();?>inicio/inicio2" method="POST">
+                <button id="verde" value='professor' name="usuario">PROFESSOR</button>
+                <button id="azul" value="aluno" name="usuario">ALUNO</button>
             </form>
         </div>
     </div>
