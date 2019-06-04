@@ -5,7 +5,8 @@ CREATE TABLE aluno (
 	senha varchar(20) NOT NULL,
 	username varchar(150) NOT NULL UNIQUE,
 
-	CONSTRAINT "alunoPK" PRIMARY KEY (id)) 
+	CONSTRAINT "alunoPK" PRIMARY KEY (id)
+); 
 
 -- SELECT * FROM aluno
 
@@ -17,7 +18,8 @@ CREATE TABLE professor (
 	senha varchar(20) NOT NULL,
 	email varchar(200) NOT NULL UNIQUE,
 
-	CONSTRAINT "professorPK" PRIMARY KEY (id)) 
+	CONSTRAINT "professorPK" PRIMARY KEY (id)
+); 
 
 -- SELECT * FROM professor
 
@@ -31,7 +33,8 @@ CREATE TABLE atividade (
 		REFERENCES professor (id)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE
-)
+);
+
 -- SELECT * FROM atividade
 
 CREATE TABLE turma (
@@ -44,7 +47,8 @@ CREATE TABLE turma (
 		REFERENCES professor (id)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE
-)
+);
+
 -- SELECT * FROM turma
 
 CREATE TABLE turmaatividade (
@@ -60,7 +64,8 @@ CREATE TABLE turmaatividade (
 		REFERENCES atividade(id)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE
-)	
+);	
+
 -- SELECT * FROM turmaatividade
 
 CREATE TABLE alunoatividade (
@@ -76,7 +81,8 @@ CREATE TABLE alunoatividade (
 		REFERENCES atividade (id)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE
-)
+);
+
 -- SELECT * FROM alunoatividade
 
 CREATE TABLE alunoturma (
@@ -92,5 +98,6 @@ CREATE TABLE alunoturma (
 		REFERENCES turma (id)
 		ON DELETE SET NULL
 		ON UPDATE CASCADE
-)
+);
+
 -- SELECT * FROM alunoturma

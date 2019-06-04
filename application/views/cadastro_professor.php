@@ -20,6 +20,19 @@
                         <br>
                         <input class="form-control" type="email" name="email" maxlength="200">
                     </li>
+                     
+                    
+                    
+                    
+                    <li>
+                        <label for="username">Nome de usuáriol</label>
+                        <br>
+                        <input class="form-control" type="text" name="username" maxlength="150">
+                    </li>
+                    
+                    
+                    
+                     
                     <li>
                         <label for="senha">Senha</label>
                         <br>
