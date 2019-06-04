@@ -19,4 +19,9 @@ class Cadastro extends CI_Controller{
         $this->load->view('nav_inicial');
         $this->load->view('cadastro_aluno');
     }
+
+    public function cadastar () {
+
+        
+    }
 }
