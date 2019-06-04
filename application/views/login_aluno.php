@@ -10,6 +10,7 @@
     <title>Login Aluno</title>
 </head>
 <body>
+<form action="<?= base_url() ?>login/autenticar" method="POST">
         <div class="caminho"></div>
         <h2>Entre na sua conta</h2>
         <div class="formulario row">

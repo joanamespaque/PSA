@@ -9,16 +9,6 @@
     <title>Página Inicial</title>
 </head>
 <body>
-<?php //$usuario = $_GET['usuario'];?>
-
-    <!-- <div class="container">
-        <div class="botoes">
-            <form action="<?= base_url();?>login/login_<?= $usuario?>" method="get">
-                <button id="azul" value="cadastro" name="tipo">CADASTRO</button>
-                <button id="verde" value="login" name="tipo">LOGIN</button>
-            </form>
-        </div>
-    </div> -->
 
     <div class="container">
         <div class="botoes">

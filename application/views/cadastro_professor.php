@@ -13,7 +13,7 @@
         <div class="caminho"></div>
         <h2>Cadastre-se</h2>
         <div class="formulario row">
-            <form action="" methos="POST">
+            <form action="" method="POST">  <!-- <?= base_url()?>/cadastro -->
                 <div id="form1">
                     <li>
                         <label for="email">E-mail</label>
