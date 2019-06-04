@@ -18,7 +18,7 @@
                     <li>
                         <label for="email">Nome de Usuário</label>
                         <br>
-                        <input class="form-control" type="text" name="login" maxlength="150">
+                        <input class="form-control" type="text" name="username" maxlength="150">
                     </li>
                     <li>
                         <label for="senha">Senha</label>

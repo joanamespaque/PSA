@@ -29,9 +29,9 @@
 			</div>
 			<div id="form2">
 				<li>
-					<label for="email">E-mail</label>
+					<label for="email">Nome de usuário</label>
 					<br>
-					<input class="form-control" type="email" name="email" maxlength="150">
+					<input class="form-control" type="text" name="username" maxlength="150">
 				</li>
 				<li>
 					<label for="senha">Senha</label>

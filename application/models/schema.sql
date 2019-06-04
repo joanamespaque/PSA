@@ -3,7 +3,7 @@ CREATE TABLE aluno (
 	nome varchar(150) NOT NULL, 
 	sobrenome varchar(150) NOT NULL,
 	senha varchar(20) NOT NULL,
-	login varchar(150) NOT NULL,
+	username varchar(150) NOT NULL UNIQUE,
 
 	CONSTRAINT "alunoPK" PRIMARY KEY (id)) 
 
@@ -13,8 +13,9 @@ CREATE TABLE professor (
 	id serial,
 	nome varchar(150) NOT NULL, 
 	sobrenome varchar(150) NOT NULL,
+	username varchar(150) NOT NULL UNIQUE,
 	senha varchar(20) NOT NULL,
-	email varchar(200) NOT NULL,
+	email varchar(200) NOT NULL UNIQUE,
 
 	CONSTRAINT "professorPK" PRIMARY KEY (id)) 
 
