@@ -10,10 +10,10 @@
     <title>Login Aluno</title>
 </head>
 <body>
-    <form action="<?php base_url()?>/login/autenticar" method="POST"></form>
-            <!-- <div class="caminho"></div> espaço para bredcrumbs -->
-            <h2>Entre na sua conta</h2>
-            <div class="formulario row">
+<form action="<?= base_url() ?>login/autenticar" method="POST">
+        <div class="caminho"></div>
+        <h2>Entre na sua conta</h2>
+        <div class="formulario row">
                 <div id="formLogin">
                     <li>
                         <label for="email">Nome de Usuário</label>

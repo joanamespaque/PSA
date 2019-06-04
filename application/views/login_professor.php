@@ -12,7 +12,7 @@
 </head>
 
 <body>
-	<form action="<?php base_url()?>/login/autenticar" method="POST">
+	<form action="<?= base_url() ?>login/autenticar" method="POST">
 		<!-- <div class="caminho"></div>  espaço para breadcrumbs-->
 		<h2>Entre na sua conta</h2>
 		<div class="formulario row">
@@ -40,7 +40,7 @@
 				</li>
 				<input class="form-control button-cadastro" type="submit" value="ENTRAR">
 			</div>
-		</div>
+        </div>
 	</form>
 	<script>
 		document.querySelector('.active').classList.remove('active');
