@@ -76,7 +76,7 @@ $query_builder = TRUE;
 $db['default'] = array(
 	// 'dsn'	=> 'pgsql:host=localhost;port=5432;dbname=pydaoFunc',
 	'dsn' => '',
-	'hostname' => '',
+	'hostname' => 'localhost',
 	'username' => 'postgres',
 	'password' => 'postgres',
 	'database' => 'projetosaladeaula',

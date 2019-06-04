@@ -10,14 +10,15 @@
     <title>Login Aluno</title>
 </head>
 <body>
-        <div class="caminho"></div>
-        <h2>Entre na sua conta</h2>
-        <div class="formulario row">
+    <form action="<?php base_url()?>/login/autenticar" method="POST"></form>
+            <!-- <div class="caminho"></div> espaço para bredcrumbs -->
+            <h2>Entre na sua conta</h2>
+            <div class="formulario row">
                 <div id="formLogin">
                     <li>
                         <label for="email">Nome de Usuário</label>
                         <br>
-                        <input class="form-control" type="email" name="email" maxlength="150">
+                        <input class="form-control" type="text" name="login" maxlength="150">
                     </li>
                     <li>
                         <label for="senha">Senha</label>
@@ -26,8 +27,8 @@
                     </li>
                     <input class="form-control button-cadastro" type="submit" value="ENTRAR">
                 </div>
-            </form>
-        </div>
+            </div>
+        </form>
     <script>
         document.querySelector('.active').classList.remove('active');
     </script>

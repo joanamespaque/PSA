@@ -10,10 +10,10 @@
     <title>Cadastro Professor</title>
 </head>
 <body>
-        <div class="caminho"></div>
+        <!-- <div class="caminho"></div> espaço para breadcrumbs -->
         <h2>Cadastre-se</h2>
         <div class="formulario row">
-            <form action="" methos="POST">
+            <form action="<?= base_url()?>/cadastro" methos="POST"> <!-- Aqui falta o caminho -->
                 <div id="form1">
                     <li>
                         <label for="email">E-mail</label>
@@ -33,9 +33,9 @@
                 </div>
                 <div id="form2">
                     <li>
-                        <label for="primerioNome">Primeiro Nome</label>
+                        <label for="primeiroNome">Primeiro Nome</label>
                         <br>
-                        <input class="form-control" type="text" name="primerioNome" maxlength="150">
+                        <input class="form-control" type="text" name="primeiroNome" maxlength="150">
                     </li>
                     <li>
                         <label for="sobrenome">Sobrenome</label>
