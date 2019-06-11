@@ -13,7 +13,7 @@
         <!-- <div class="caminho"></div> espaço para breadcrumbs -->
         <h2>Cadastre-se</h2>
         <div class="formulario row">
-            <form action="<?= base_url()?>/cadastro" method="POST"> <!-- Aqui falta o caminho -->
+            <form action="<?= base_url()?>cadastro/enviar" method="POST"> <!-- Aqui falta o caminho -->
                 <div id="form1">
                     <li>
                         <label for="nomeDeUsuario">Nome de Usuário:</label>
@@ -42,7 +42,8 @@
                         <br>
                         <input class="form-control" type="text" name="sobrenome" maxlength="150" required>
                     </li>
-                    <input class="form-control button-cadastro" type="submit" value="CADASTRAR">
+                <button class="form-control button-cadastro" type="submit" name="envia_cadastro" value="aluno">CADASTRAR</button>
+
                 </div>
             </form>
         </div>
