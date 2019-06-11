@@ -29,7 +29,7 @@ class Aluno_model extends CI_Model {
 
     public function buscarUsuario($login) {
 
-        $this->db->select();
+        $this->db->select('*');
         $this->db->from('aluno');
         $this->db->where('username = "'.$login['username'].'" and senha="'.$login['senha'].'"');
         $result = $this->db->get();

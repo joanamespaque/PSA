@@ -13,7 +13,7 @@
         <!-- <div class="caminho"></div> espaço para breadcrumbs -->
         <h2>Cadastre-se</h2>
         <div class="formulario row">
-            <form action="<?= base_url()?>/cadastro" methos="POST"> <!-- Aqui falta o caminho -->
+            <form action="<?= base_url()?>/cadastro" method="POST"> <!-- Aqui falta o caminho -->
                 <div id="form1">
                     <li>
                         <label for="email">E-mail</label>

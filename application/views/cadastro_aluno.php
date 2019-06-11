@@ -18,29 +18,29 @@
                     <li>
                         <label for="nomeDeUsuario">Nome de Usuário:</label>
                         <br>
-                        <input class="form-control" type="text" name="username" maxlength="150">
+                        <input class="form-control" type="text" name="username" maxlength="150" required>
                     </li>
                     <li>
                         <label for="senha">Senha</label>
                         <br>
-                        <input class="form-control" type="password" name="senha" maxlength="20">
+                        <input class="form-control" type="password" name="senha" maxlength="20" required>
                     </li>
                     <li>
                         <label for="verificaSenha">Verificar Senha</label>
                         <br>
-                        <input class="form-control" type="password" name="verificaSenha" maxlength="20">
+                        <input class="form-control" type="password" name="verificaSenha" maxlength="20" required>
                     </li>
                 </div>
                 <div id="form2">
                     <li>
                         <label for="primeiroNome">Primeiro Nome</label>
                         <br>
-                        <input class="form-control" type="text" name="primeiroNome" maxlength="150">
+                        <input class="form-control" type="text" name="primeiroNome" maxlength="150" required>
                     </li>
                     <li>
                         <label for="sobrenome">Sobrenome</label>
                         <br>
-                        <input class="form-control" type="text" name="sobrenome" maxlength="150">
+                        <input class="form-control" type="text" name="sobrenome" maxlength="150" required>
                     </li>
                     <input class="form-control button-cadastro" type="submit" value="CADASTRAR">
                 </div>
