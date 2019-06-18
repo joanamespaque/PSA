@@ -16,11 +16,8 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navBar" id="bs-example-navbar-collapse-1">
 				<ul class="navProfessor">
-					<li class="active inicio">
-						<a href="<?= base_url();?>inicio/inicio">INÍCIO</a>
-					</li>
-					<li class="turmas">
-						<a>TURMAS</a>
+					<li class="active turmas">
+						<a  href="<?= base_url();?>Turmas/turmas_professor">TURMAS</a>
 					</li>
 					<li class="atividades">
 						<a>ATIVIDADES</a>
@@ -31,6 +28,7 @@
 					<li class="sobre">
 						<a href="<?= base_url();?>sobre/sobre">SOBRE</a>
 					</li>
+					<button class="logout btn">Sair</button>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
