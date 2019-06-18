@@ -10,7 +10,14 @@
     <title>Login Aluno</title>
 </head>
 <body>
-<form action="<?= base_url() ?>login/autenticar" method="POST">
+<form action="<?= base_url() ?>login/autenticarAluno" method="POST">
+<?php if($this->session->flashdata('success')) {?>
+					<div class="alert alert-success text-center" style="margin-top:20px;">
+						<?php echo $this->session->flashdata('success'); ?>
+					</div>
+					<?php
+				}
+			?>
         <div class="caminho"></div>
         <h2>Entre na sua conta</h2>
         <div class="formulario row">

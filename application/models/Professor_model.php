@@ -24,9 +24,19 @@ class Professor_model extends CI_Model {
     public function buscarUsuario($login) {
         $this->db->select('*');
         $this->db->from('professor');
-        $this->db->where('username="'.$login['username'].'" and senha="'.$login['senha'].'"');
+        $this->db->where("username='".$login['username']."' and senha='".$login['senha']."'");
         $result = $this->get();
 
         return $result;
     }
+
+    public function buscarUserExistente($email, $username) {
+        $this->db->select('id');
+        $this->db->from('professor');
+        $this->db->where("username='".$username."' or email='".$email."'");
+        $result = $this->db->get();
+
+        return $result;
+    }
+    
 }
