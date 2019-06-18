@@ -6,7 +6,8 @@
     padding: 0px 0px 0px 0px;
 }
 ul.navProfessor{
-    width:630px!important;
+    width: 630px!important;
+
 }
 .atividades{
     margin-left:15px;
@@ -101,6 +102,18 @@ a:hover{
 h2{
     text-align: center;
 }
+.logout{
+    float: right;
+    width: 90px;
+    font-size: 18px;
+    color: white;
+    background-color:#8C181B;
+    margin-top: 10px;
+}
+button:hover{
+    text-decoration: underline !important;
+    color:white !important;
+}
 @media screen and (max-width: 450px) {
 	nav.acessibilidade{
         display: block;
@@ -118,7 +131,7 @@ h2{
 	}
 }
 @media screen and (max-width: 768px) {
-    .navBar li{
+    .navBar li, .logout{
         float:none !important;
         display: block;
 		margin-left: auto;

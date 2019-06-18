@@ -4,11 +4,8 @@ CREATE TABLE aluno (
 	sobrenome varchar(150) NOT NULL,
 	senha varchar(20) NOT NULL,
 	username varchar(150) NOT NULL UNIQUE,
-
 	CONSTRAINT "alunoPK" PRIMARY KEY (id)
 ); 
-
--- SELECT * FROM aluno
 
 CREATE TABLE professor (
 	id serial,
@@ -20,8 +17,6 @@ CREATE TABLE professor (
 
 	CONSTRAINT "professorPK" PRIMARY KEY (id)
 ); 
-
--- SELECT * FROM professor
 
 CREATE TABLE atividade (
 	id serial, 
@@ -35,8 +30,6 @@ CREATE TABLE atividade (
 		ON UPDATE CASCADE
 );
 
--- SELECT * FROM atividade
-
 CREATE TABLE turma (
 	id serial,
 	idprofessor int NOT NULL,
@@ -48,8 +41,6 @@ CREATE TABLE turma (
 		ON DELETE CASCADE
 		ON UPDATE CASCADE
 );
-
--- SELECT * FROM turma
 
 CREATE TABLE turmaatividade (
 	idturma int NOT NULL,
@@ -66,8 +57,6 @@ CREATE TABLE turmaatividade (
 		ON UPDATE CASCADE
 );	
 
--- SELECT * FROM turmaatividade
-
 CREATE TABLE alunoatividade (
 	idaluno int NOT NULL,
 	idatividade int NOT NULL,
@@ -83,8 +72,6 @@ CREATE TABLE alunoatividade (
 		ON UPDATE CASCADE
 );
 
--- SELECT * FROM alunoatividade
-
 CREATE TABLE alunoturma (
 	idaluno int NOT NULL,
 	idturma int NOT NULL,
@@ -99,5 +86,3 @@ CREATE TABLE alunoturma (
 		ON DELETE SET NULL
 		ON UPDATE CASCADE
 );
-
--- SELECT * FROM alunoturma

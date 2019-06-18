@@ -50,5 +50,4 @@
         document.querySelector('.active').classList.remove('active');
     </script>
 </body>
-
 </html>

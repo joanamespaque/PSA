@@ -23,4 +23,5 @@ class Turmas extends CI_Controller{
         print_r("<h5 style='color: green;'>OI MEU PARÇA ALUNO! AQUI FICA A PÁGINA DAS SUAS TURMAS</h5>");
         // $this->load->view('turmas_professor');
     }
+
 }
