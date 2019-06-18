@@ -38,8 +38,8 @@ $config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
-| URI PROTOCOL
 |--------------------------------------------------------------------------
+| URI PROTOCOL
 |
 | This item determines which server global should be used to retrieve the
 | URI string.  The default setting of 'REQUEST_URI' works for most servers.
@@ -520,4 +520,3 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
->>>>>>> 659fe1e499d9d09393044ed86ffe6fa93627a282
