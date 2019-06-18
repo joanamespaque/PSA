@@ -10,39 +10,40 @@
     <title>Cadastro Professor</title>
 </head>
 <body>
-        <div class="caminho"></div>
+        <!-- <div class="caminho"></div> espaço para breadcrumbs -->
         <h2>Cadastre-se</h2>
         <div class="formulario row">
-            <form action="" methos="POST">
+            <form action="<?= base_url()?>cadastro/enviar" method="POST"> <!-- Aqui falta o caminho -->
                 <div id="form1">
                     <li>
                         <label for="nomeDeUsuario">Nome de Usuário:</label>
                         <br>
-                        <input class="form-control" type="text" name="login" maxlength="150">
+                        <input class="form-control" type="text" name="username" maxlength="150" required>
                     </li>
                     <li>
                         <label for="senha">Senha</label>
                         <br>
-                        <input class="form-control" type="password" name="senha" maxlength="20">
+                        <input class="form-control" type="password" name="senha" maxlength="20" required>
                     </li>
                     <li>
                         <label for="verificaSenha">Verificar Senha</label>
                         <br>
-                        <input class="form-control" type="password" name="verificaSenha" maxlength="20">
+                        <input class="form-control" type="password" name="verificaSenha" maxlength="20" required>
                     </li>
                 </div>
                 <div id="form2">
                     <li>
-                        <label for="primerioNome">Primeiro Nome</label>
+                        <label for="primeiroNome">Primeiro Nome</label>
                         <br>
-                        <input class="form-control" type="text" name="primerioNome" maxlength="150">
+                        <input class="form-control" type="text" name="primeiroNome" maxlength="150" required>
                     </li>
                     <li>
                         <label for="sobrenome">Sobrenome</label>
                         <br>
-                        <input class="form-control" type="text" name="sobrenome" maxlength="150">
+                        <input class="form-control" type="text" name="sobrenome" maxlength="150" required>
                     </li>
-                    <input class="form-control button-cadastro" type="submit" value="CADASTRAR">
+                <button class="form-control button-cadastro" type="submit" name="envia_cadastro" value="aluno">CADASTRAR</button>
+
                 </div>
             </form>
         </div>
@@ -50,5 +51,4 @@
         document.querySelector('.active').classList.remove('active');
     </script>
 </body>
-
 </html>

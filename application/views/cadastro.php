@@ -10,10 +10,10 @@
     <title>Cadastro Professor</title>
 </head>
 <body>
-        <div class="caminho"></div>
+        <!-- <div class="caminho"></div> espaço para breadcrumbs -->
         <h2>Cadastre-se</h2>
         <div class="formulario row">
-            <form action="" methos="POST">
+            <form action="<?= base_url()?>/cadastro" method="POST"> 
                 <div id="form1">
                     <li>
                         <label for="email">E-mail</label>
@@ -50,5 +50,4 @@
         document.querySelector('.active').classList.remove('active');
     </script>
 </body>
-
 </html>

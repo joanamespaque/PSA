@@ -95,3 +95,4 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+>>>>>>> 659fe1e499d9d09393044ed86ffe6fa93627a282
