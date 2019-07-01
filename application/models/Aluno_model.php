@@ -31,7 +31,7 @@ class Aluno_model extends CI_Model {
 
         $this->db->select('*');
         $this->db->from('aluno');
-        $this->db->where('username = "'.$login['username'].'" and senha="'.$login['senha'].'"');
+        $this->db->where("username = '".$login['username']."' and senha='".$login['senha']."'");
         $result = $this->db->get();
 
         return $result;

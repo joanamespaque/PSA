@@ -14,9 +14,16 @@
         <h2>Cadastre-se</h2>
         <div class="formulario row">
             <form action="<?= base_url()?>cadastro/enviar" method="POST"> <!-- Aqui falta o caminho -->
+            <?php if($this->session->flashdata('error')) {?>
+					<div class="alert alert-danger text-center" style="margin-top:20px;">
+						<?php echo $this->session->flashdata('error'); ?>
+					</div>
+					<?php
+				}
+			?>
                 <div id="form1">
                     <li>
-                        <label for="nomeDeUsuario">Nome de Usuário:</label>
+                        <label for="nomeDeUsuario">Nome de Usuário</label>
                         <br>
                         <input class="form-control" type="text" name="username" maxlength="150" required>
                     </li>
