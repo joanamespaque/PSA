@@ -35,5 +35,4 @@ class Login extends CI_Controller{
         // }
 
     }
->>>>>>> 659fe1e499d9d09393044ed86ffe6fa93627a282
 }

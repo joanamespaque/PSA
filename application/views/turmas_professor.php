@@ -78,7 +78,7 @@
                 </a>
             </div>
             <div class="button">
-                <button id="addTurma">ADICIONAR TURMA</button>
+                <a href="<?= base_url()?>cadastro/cadastro_turma" id="addTurma">ADICIONAR TURMA</a>
             </div>
         </div>
     </div>

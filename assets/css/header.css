@@ -140,5 +140,8 @@ button:hover{
     .navBar ul{
         height: 100%;
     }
+    ul.navProfessor{
+        width: 100% !important;    
+    }
 
 }

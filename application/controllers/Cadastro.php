@@ -4,11 +4,6 @@ class Cadastro extends CI_Controller{
     public function __construct(){
         parent::__construct();
     }
-    public function botoes_cadastro(){
-        $this->load->view('header');
-        $this->load->view('nav_inicial');
-        $this->load->view('botoes_cadastro');
-    }
     public function cadastro_professor(){
         $this->load->view('header');
         $this->load->view('nav_inicial');
@@ -18,6 +13,11 @@ class Cadastro extends CI_Controller{
         $this->load->view('header');
         $this->load->view('nav_inicial');
         $this->load->view('cadastro_aluno');
+    }
+    public function cadastro_turma(){
+        $this->load->view('header');
+        $this->load->view('nav_professor');
+        $this->load->view('cadastro_turma');
     }
 
     public function enviar () {

@@ -32,13 +32,13 @@
                         
                         <input class="form-control" type="password" name="senha" maxlength="20" required>
                     </li>
+                </div>
+                <div id="form2">
                     <li>
                         <label for="verificaSenha">Verificar Senha</label>
                         <br>
                         <input class="form-control" type="password" name="verificaSenha" maxlength="20" required>
                     </li>
-                </div>
-                <div id="form2">
                     <li>
                         <label for="primeiroNome">Primeiro Nome</label>
                         <br>
@@ -49,9 +49,9 @@
                         <br>
                         <input class="form-control" type="text" name="sobrenome" maxlength="150" required>
                     </li>
-                <button class="form-control button-cadastro" type="submit" name="envia_cadastro" value="professor">CADASTRAR</button>
 
                 </div>
+                <button class="form-control button-cadastro" type="submit" name="envia_cadastro" value="professor">CADASTRAR</button>
             </form>
         </div>
     <script>

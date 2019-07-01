@@ -29,12 +29,6 @@ div.botoes{
     margin-top:30px;
     width: 280px;
 }
-#google{
-    background-color: #8C181B;
-}
-#facebook{
-    background-color: #207ABF;
-}
 .formulario, label, div.botoes, a, #formLogin, input.form-control{
     display: block;
     margin-left:auto;
@@ -55,11 +49,8 @@ label{
     margin-top:20px;
     text-align: center;
 }
-#form1, #form2{
+#form1{
     float: left;
-}
-#form2{
-    padding-left: 40px;
 }
 input.form-control{
     width: 250px;
@@ -85,9 +76,6 @@ input.form-control{
         display: block;
         margin-right: auto;
         margin-left:auto;
-    }
-    #form2{
-        padding-left:0px;
     }
     .button-cadastro{
         margin-top:30px;

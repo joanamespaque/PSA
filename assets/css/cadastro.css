@@ -8,6 +8,10 @@ div.botoes li{
     border-radius: 5px;
     /* padding: 20px 30px 20px 30px; */
 }
+.turma{
+    background-color:#8C181B !important;
+    border-radius: 5px;
+}
 li {
 	list-style-type: none;
 }
@@ -22,30 +26,8 @@ a{
     font-size:18px;
     text-align: center;
 }
-div.botoes li a:hover{
-    color:white;
-}
-div.botoes{
-    margin-top:30px;
-    width: 330px;
-}
-#google{
-    background-color: #8C181B;
-}
-#email{
-    background-color: #F0A01F;
-}
-#facebook{
-    background-color: #207ABF;
-}
-.formulario, label, div.botoes, a{
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-}
 .formulario{
-    width: 570px;
-    margin-top:40px;
+    width: 640px;
 }
 label{
     margin-bottom: -10px;
@@ -54,21 +36,34 @@ label{
 }
 #form1, #form2{
     float: left;
+    margin-bottom:20px;
 }
 #form2{
     padding-left: 70px;
 }
 input.form-control{
     width: 250px;
+    margin: none;
     height: 40px;
-    /* margin-left: 25px; */
+}
+.formulario, label, a, .button-cadastro, input.form-control{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
 }
 .button-cadastro{
+    width:200px;
+    margin-top:30px;
     background-color:#90C74C;
-    margin-top:45px;
     color:white;
     border:none;
     margin-bottom: 30px;
+}
+#cadastroTurma{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:300px;
 }
 @media screen and (max-width: 615px) {
     .formulario, div.formulario li{
@@ -81,6 +76,9 @@ input.form-control{
     }
     #form2{
         padding-left:0px;
+    }
+    #form1{
+        margin-bottom: 0;
     }
     .button-cadastro{
         margin-top:30px;

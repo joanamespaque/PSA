@@ -16,18 +16,7 @@
 		<!-- <div class="caminho"></div>  espaço para breadcrumbs-->
 		<h2>Entre na sua conta</h2>
 		<div class="formulario row">
-			<div id="form1" class="botoes">
-				<li id="google" class="button-cadastro">
-					<a href="">Continuar com o Google</a>
-				</li>
-				<li id="facebook" class="button-cadastro">
-					<a href="">Continuar com o Facebook</a>
-				</li>
-			</div>
-			<div id="form1">
-				<p>OU</p>
-			</div>
-			<div id="form2">
+			<div id="formLogin">
 				<li>
 					<label for="email">Nome de usuário</label>
 					<br>
