@@ -20,7 +20,7 @@
 						<a  href="<?= base_url();?>Turmas/turmas_professor">TURMAS</a>
 					</li>
 					<li class="atividades">
-						<a>ATIVIDADES</a>
+						<a href="<?= base_url();?>Atividades/atividades_professor">ATIVIDADES</a>
 					</li>
 					<li class="perfil">
 						<a>PERFIL</a>

@@ -7,7 +7,6 @@
 }
 ul.navProfessor{
     width: 630px!important;
-
 }
 .atividades{
     margin-left:15px;
@@ -108,7 +107,7 @@ h2{
     font-size: 18px;
     color: white;
     background-color:#8C181B;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 button:hover{
     text-decoration: underline !important;
@@ -130,7 +129,7 @@ button:hover{
         margin-bottom:-22px;
 	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .navBar li, .logout{
         float:none !important;
         display: block;
@@ -140,8 +139,7 @@ button:hover{
     .navBar ul{
         height: 100%;
     }
-    ul.navProfessor{
+    ul.navProfessor, li.active{
         width: 100% !important;    
     }
-
 }

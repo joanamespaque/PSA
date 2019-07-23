@@ -47,6 +47,9 @@ output{
     font-size: 17px;
     padding-top:15px;
 }
+.logout{
+    margin-top:10px;
+}
 /* @media screen and (max-width: 890px) {
     .turmas{
         width: 95%;
