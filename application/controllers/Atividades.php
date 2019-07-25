@@ -10,7 +10,7 @@ class Atividades extends CI_Controller{
     }
     public function atividades_professor(){
         $this->load->view('header');
-        $this->load->view('nav_professor');
+        $this->load->view('nav_usuario');
         $this->load->view('atividades');
     }
 

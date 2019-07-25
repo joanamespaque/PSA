@@ -11,8 +11,9 @@ div.botoes button{
     border: none;
     color: white;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 22px;
     cursor: pointer;
+    border-radius:5px;
 }
 div.botoes{
     width: 250px;

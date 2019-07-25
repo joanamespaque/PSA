@@ -21,7 +21,6 @@
 					<?php
 				}
 			?>
-            <div id="form1">
                 <li>
                     <label for="email" class="acessibilidadeFonte">E-mail</label>
                     <br>
@@ -43,8 +42,6 @@
                     <br>
                     <input class="form-control" type="password" name="verificaSenha" maxlength="20" required>
                 </li>
-            </div>
-            <div id="form2">
                 <li>
                     <label for="primeiroNome" class="acessibilidadeFonte">Primeiro Nome</label>
                     <br>
@@ -55,9 +52,7 @@
                     <br>
                     <input class="form-control" type="text" name="sobrenome" maxlength="150" required>
                 </li>
-            <button class="form-control button-cadastro acessibilidadeFonte" type="submit" name="envia_cadastro" value="professor">CADASTRAR</button>
-
-            </div>
+            <button class="button-cadastro cadastroUsuario acessibilidadeFonte" type="submit" name="envia_cadastro" value="professor">CADASTRAR</button>
         </form>
     </div>
     <script>

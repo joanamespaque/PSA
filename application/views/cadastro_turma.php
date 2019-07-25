@@ -10,7 +10,7 @@
     <title>Cadastro de Turma</title>
 </head>
 <body>
-        <div class="formulario row">
+        <div class="formularioTurma row">
                 <div id="cadastroTurma">
                     <li>
                         <label for="nomeTurma" class="acessibilidadeFonte">Nome da turma:</label>
@@ -27,7 +27,7 @@
                         <br>
                         <input class="form-control" type="text" name="sala" maxlength="20">
                     </li>
-                    <input class="form-control button-cadastro turma acessibilidadeFonte" type="submit" value="CADASTRAR TURMA">
+                    <input class="button-cadastro turma acessibilidadeFonte" type="submit" value="CADASTRAR TURMA">
                 </div>
         </div>
 
