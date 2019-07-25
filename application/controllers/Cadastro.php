@@ -36,7 +36,7 @@ class Cadastro extends CI_Controller{
     }
     public function cadastro_turma(){
         $this->load->view('header');
-        $this->load->view('nav_professor');
+        $this->load->view('nav_usuario');
         $this->load->view('cadastro_turma');
     }
 

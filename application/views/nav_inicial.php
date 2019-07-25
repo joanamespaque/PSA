@@ -15,7 +15,7 @@
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navBar" id="bs-example-navbar-collapse-1">
-				<ul id="navInicio">
+				<ul id="navInicio" navInicial>
 					<a href="<?= base_url();?>inicio/inicio">
 					<li class="active inicio navItem acessibilidadeFonte">
 						INÍCIO

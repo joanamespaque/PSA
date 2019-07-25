@@ -11,7 +11,7 @@ class Turmas extends CI_Controller{
     }
     public function turmas_professor(){
         $this->load->view('header');
-        $this->load->view('nav_professor');
+        $this->load->view('nav_usuario');
         $this->load->view('turmas');
     }
 
@@ -19,7 +19,7 @@ class Turmas extends CI_Controller{
     public function turmas_aluno(){
         $this->controle_acesso->controlar();
         $this->load->view('header');
-        $this->load->view('nav_professor');
+        $this->load->view('nav_usuario');
         print_r("<h5 style='color: green;'>OI MEU PARÇA ALUNO! AQUI FICA A PÁGINA DAS SUAS TURMAS</h5>");
         // $this->load->view('turmas_professor');
     }

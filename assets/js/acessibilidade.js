@@ -15,10 +15,17 @@ function fonte(e){
     ulWidth = ul.width();
     var elementos = $(".acessibilidadeFonte");
     if(e == 'a'){
-        ul.css({ 'width': (ulWidth+20)+'px' });
-        console.log(ul.width());
+        if(ul.is('[navInicial]')){
+            ul.css({ 'width': (ulWidth+7)+'px' });
+        } else{
+            ul.css({ 'width': (ulWidth+20)+'px' });
+        }
     } else if ('d'){
-        ul.css({ 'width': (ulWidth-20)+'px' });
+        if(ul.is('[navInicial]')){
+            ul.css({ 'width': (ulWidth-7)+'px' });
+        } else{
+            ul.css({ 'width': (ulWidth-20)+'px' });
+        }
 
     }
     for (let i = 0; i < elementos.length; i++) {
