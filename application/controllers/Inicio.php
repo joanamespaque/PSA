@@ -31,7 +31,6 @@ class Inicio extends CI_Controller{
                 redirect('login/login_aluno');
             break;
         }
-  
     }
 
 }

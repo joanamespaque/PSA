@@ -15,6 +15,7 @@
                 <button id="verde" value='professor' name="usuario" class="acessibilidadeFonte">PROFESSOR</button>
                 <button id="azul" value="aluno" name="usuario" class="acessibilidadeFonte">ALUNO</button>
             </form>
+            <p><?php var_dump($_SESSION); ?></p>
         </div>
     </div>
 </body>

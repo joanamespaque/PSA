@@ -5,10 +5,9 @@ class Controle_acesso {
     public function controlar () {
 
         $CI =& get_instance();
-        $user = $CI->session->userdata('username');
-        if ($user == "") {
+        $logged = $CI->session->userdata('logged_in');
+        if ($logged == FALSE) {
             redirect('login');
-        } 
-
+        } else return $logged;
     }
 }

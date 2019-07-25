@@ -36,9 +36,10 @@
 							SOBRE
 						</li>
 					</a>
-					<a href="">
+					<a href= "<?= base_url();?>login/logout">
 						<li class="logout navItem acessibilidadeFonte">Sair</li>
 					</a>
+
 					<!-- <button class="logout btn  acessibilidadeFonte">
 						Sair
 					</button> -->
@@ -48,6 +49,8 @@
 		</div>
 		<!-- /.container-fluid -->
 	</nav>
+            <p><?php var_dump($_SESSION); ?></p>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="<?= base_url();?>assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="<?= base_url();?>assets/js/acessibilidade.js"></script>
