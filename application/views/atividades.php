@@ -10,41 +10,41 @@
 	<div class="container">
 		<!-- Esse botao só deve aparecer se um professor estiver logado: -->
 		<div class="button">
-			<div class="criar" expandir="false">
+			<button class="criar acessibilidadeFonte" expandir="false">
 				<span class="glyphicon glyphicon-plus"></span>
 				CRIAR
-            </div>
+			</button>
             <div id="opcoes"></div>
 		</div>
 		<div class="listaAtividades">
 			<div id="atividade" class="atividade">
 				<a href="">
-					<p class="nome">Atividade</p> <!-- colocar com php o nome da atividade -->
+					<p class="nome acessibilidadeFonte">Atividade</p> <!-- colocar com php o nome da atividade -->
 				</a>
 			</div>
 			<div id="atividade" class="atividade">
 				<a href="">
-					<p class="nome">Atividade</p> <!-- colocar com php o nome da atividade -->
+					<p class="nome acessibilidadeFonte">Atividade</p> <!-- colocar com php o nome da atividade -->
 				</a>
 			</div>
 			<div id="atividade" class="atividade">
 				<a href="">
-					<p class="nome">Atividade</p> <!-- colocar com php o nome da atividade -->
+					<p class="nome acessibilidadeFonte">Atividade</p> <!-- colocar com php o nome da atividade -->
 				</a>
 			</div>
 			<div id="atividade" class="atividade">
 				<a href="">
-					<p class="nome">Atividade</p> <!-- colocar com php o nome da atividade -->
+					<p class="nome acessibilidadeFonte">Atividade</p> <!-- colocar com php o nome da atividade -->
 				</a>
 			</div>
 			<div id="atividade" class="atividade">
 				<a href="">
-					<p class="nome">Atividade</p> <!-- colocar com php o nome da atividade -->
+					<p class="nome acessibilidadeFonte">Atividade</p> <!-- colocar com php o nome da atividade -->
 				</a>
 			</div>
 			<div id="atividade" class="atividade">
 				<a href="">
-					<p class="nome">Atividade</p> <!-- colocar com php o nome da atividade -->
+					<p class="nome acessibilidadeFonte">Atividade</p> <!-- colocar com php o nome da atividade -->
 				</a>
 			</div>
 		</div>

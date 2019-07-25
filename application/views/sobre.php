@@ -11,7 +11,7 @@
 <body>
     <div class="container divSobre">
         <img class="logoGTA" src="<?= base_url();?>assets/css/imagens/logo_GTA.png" id="logo" alt="Logo do Grupo de Tecnologias Assistivas do IFRS Campus Rio Grande">
-        <p id="sobreTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, nemo nobis. Atque soluta placeat quas sequi dolorem adipisci ea amet! Doloribus laboriosam adipisci labore facere aliquam! Iure aspernatur iusto ducimus!
+        <p id="sobreTexto" class="acessibilidadeFonte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, nemo nobis. Atque soluta placeat quas sequi dolorem adipisci ea amet! Doloribus laboriosam adipisci labore facere aliquam! Iure aspernatur iusto ducimus!
             <br>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, laborum dicta. Incidunt facilis ducimus atque ea dolores quibusdam optio ab possimus inventore nisi, enim vitae, quia vero unde id ut?
             <br>

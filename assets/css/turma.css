@@ -1,12 +1,13 @@
-.turmas{
+.turmasList{
     width: 88%;
     display:block;
     margin-left: auto;
     margin-right: auto; 
 }
 #turma{
-    width:220px;
-    height: 90px;
+    /* width:220px; */
+    /* height: 90px; */
+    padding: 0px 60px 0px 60px;
     background-color: #90C74C;
     border-radius: 10px;
     float: left;    
@@ -18,7 +19,8 @@ div.button{
     float:left;
 }
 p, output{
-    color: #515151;
+    line-height: 60px;
+    color: black;
     text-align: center;
 }
 output, p:hover{
@@ -26,11 +28,12 @@ output, p:hover{
 }
 p{
     font-size: 30px;
-    padding-top:10px;
+    margin-bottom:10px;
+    /* padding-top:10px; */
 }
 output{
     font-size: 18px;
-    margin-top:-20px;
+    margin-top:-45px;
 }
 #addTurma{
     display:block;
@@ -38,25 +41,23 @@ output{
     margin-right: auto; 
     background-color:#8C181B;
     color: white;
-    width: 220px;
     text-align: center;
-    height: 54px;
     margin-bottom:40px;
     border-radius: 10px;
     border:none;
     font-size: 17px;
-    padding-top:15px;
+    padding: 15px 20px 15px 20px;
 }
 .logout{
     margin-top:10px;
 }
 /* @media screen and (max-width: 890px) {
-    .turmas{
+    .turmasList{
         width: 95%;
     }
 } */
 @media screen and (max-width: 900px) {
-    .turmas{
+    .turmasList{
         width: 100%;
         display:block;
         margin-left: auto;
@@ -64,12 +65,12 @@ output{
     }
 }
 @media screen and (max-width: 780px) {
-    .turmas{
+    .turmasList{
         width: 600px;
     }
 }
 @media screen and (max-width: 550px) {
-    .turmas{
+    .turmasList{
         width: 500px;
     }
     #turma{
@@ -77,7 +78,7 @@ output{
     }
 }
 @media screen and (max-width: 500px) {
-    .turmas{
+    .turmasList{
         width: 220px;
     }
     #turma{

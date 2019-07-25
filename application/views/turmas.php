@@ -10,18 +10,22 @@
 </head>
 <body>
     <div class="container">
-        <div class="turmas">
+        <div class="turmasList">
         <!-- adicionar o id da turma ao id="turma" -->
             <div id="turma">
                 <a href="">
-                    <p class="nome">Turma</p> <!-- colocar com php o nome da turma -->
-                    <output> 9999 alunos</output> <!-- colocar com php o numero de alunos cadastrados na turma -->
+                    <p class="nome acessibilidadeFonte">Turma</p> <!-- colocar com php o nome da turma -->
+                    <output class="acessibilidadeFonte"> 9999 alunos</output> <!-- colocar com php o numero de alunos cadastrados na turma -->
                 </a>
             </div>
            <!-- Esse botao só deve aparecer se um professor estiver logado: -->
-            <div class="button">
-                <a href="<?= base_url()?>cadastro/cadastro_turma" id="addTurma">ADICIONAR TURMA</a>
-            </div>
+           <div class="button">
+               <a href="<?= base_url()?>cadastro/cadastro_turma">
+                <button class="acessibilidadeFonte"  id="addTurma">
+                    ADICIONAR TURMA
+                </button>
+            </a>
+           </div>
         </div>
     </div>
     <script>

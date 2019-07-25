@@ -13,21 +13,21 @@
         <div class="formulario row">
                 <div id="cadastroTurma">
                     <li>
-                        <label for="nomeTurma">Nome da turma:</label>
+                        <label for="nomeTurma" class="acessibilidadeFonte">Nome da turma:</label>
                         <br>
                         <input class="form-control" type="text" name="nomeTurma" maxlength="150">
                     </li>
                     <li>
-                        <label for="assunto">Assunto:</label>
+                        <label for="assunto" class="acessibilidadeFonte">Assunto:</label>
                         <br>
                         <input class="form-control" type="text" name="assunto" maxlength="20">
                     </li>
                     <li>
-                        <label for="sala">Sala:</label>
+                        <label for="sala" class="acessibilidadeFonte">Sala:</label>
                         <br>
                         <input class="form-control" type="text" name="sala" maxlength="20">
                     </li>
-                    <input class="form-control button-cadastro turma" type="submit" value="CADASTRAR TURMA">
+                    <input class="form-control button-cadastro turma acessibilidadeFonte" type="submit" value="CADASTRAR TURMA">
                 </div>
         </div>
 

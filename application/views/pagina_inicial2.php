@@ -13,8 +13,8 @@
     <div class="container">
         <div class="botoes">
             <form action="<?= base_url();?>inicio/verifica_acao" method="POST">
-                <button id="azul" value="cadastro_<?= $_POST['usuario'];?>" name="tipo">CADASTRO</button>
-                <button id="verde" value="login_<?= $_POST['usuario'];?>" name="tipo">LOGIN</button>
+                <button id="azul" value="cadastro_<?= $_POST['usuario'];?>" name="tipo" class="acessibilidadeFonte">CADASTRO</button>
+                <button class="acessibilidadeFonte" id="verde" value="login_<?= $_POST['usuario'];?>" name="tipo">LOGIN</button>
             </form>
         </div>
     </div>

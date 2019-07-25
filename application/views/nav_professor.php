@@ -16,19 +16,32 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navBar" id="bs-example-navbar-collapse-1">
 				<ul class="navProfessor">
-					<li class="active turmas">
-						<a  href="<?= base_url();?>Turmas/turmas_professor">TURMAS</a>
-					</li>
-					<li class="atividades">
-						<a href="<?= base_url();?>Atividades/atividades_professor">ATIVIDADES</a>
-					</li>
-					<li class="perfil">
-						<a>PERFIL</a>
-					</li>
-					<li class="sobre">
-						<a href="<?= base_url();?>sobre/sobre">SOBRE</a>
-					</li>
-					<button class="logout btn">Sair</button>
+					<a href="<?= base_url();?>Turmas/turmas_professor">
+						<li class="active turmas acessibilidadeFonte navItem">
+							TURMAS
+						</li>
+					</a>
+					<a href="<?= base_url();?>Atividades/atividades_professor">
+						<li class="atividades acessibilidadeFonte  navItem">
+							ATIVIDADES
+						</li>
+					</a>
+					<a>
+						<li class="perfil acessibilidadeFonte  navItem">
+							PERFIL
+						</li>
+					</a>
+					<a href="<?= base_url();?>sobre/sobre">
+						<li class="sobre acessibilidadeFonte  navItem">
+							SOBRE
+						</li>
+					</a>
+					<a href="">
+						<li class="logout navItem acessibilidadeFonte">Sair</li>
+					</a>
+					<!-- <button class="logout btn  acessibilidadeFonte">
+						Sair
+					</button> -->
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -37,4 +50,5 @@
 	</nav>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="<?= base_url();?>assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="<?= base_url();?>assets/js/acessibilidade.js"></script>
 </body>

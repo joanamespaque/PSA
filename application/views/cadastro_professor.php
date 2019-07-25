@@ -11,7 +11,7 @@
 </head>
 <body>
         <!-- <div class="caminho"></div> espaço para breadcrumbs -->
-        <h2>Cadastre-se</h2>
+        <h2 class="acessibilidadeFonte">Cadastre-se</h2>
         <div class="formulario row">
             <form action="<?= base_url()?>cadastro/enviar" method="POST"> <!-- Aqui falta o caminho -->
             <?php if($this->session->flashdata('error')){?>
@@ -23,39 +23,39 @@
 			?>
             <div id="form1">
                 <li>
-                    <label for="email">E-mail</label>
+                    <label for="email" class="acessibilidadeFonte">E-mail</label>
                     <br>
                     <input class="form-control" type="email" name="email" maxlength="200" required>
                 </li>
                 <li>
-                    <label for="username">Nome de usuário</label>
+                    <label for="username" class="acessibilidadeFonte">Nome de usuário</label>
                     <br>
                     <input class="form-control" type="text" name="username" maxlength="150" required>
                 </li>
                 <li>
-                    <label for="senha">Senha</label>
+                    <label for="senha" class="acessibilidadeFonte">Senha</label>
                     <br>
                     
                     <input class="form-control" type="password" name="senha" maxlength="20" required>
                 </li>
                 <li>
-                    <label for="verificaSenha">Verificar Senha</label>
+                    <label for="verificaSenha" class="acessibilidadeFonte">Verificar Senha</label>
                     <br>
                     <input class="form-control" type="password" name="verificaSenha" maxlength="20" required>
                 </li>
             </div>
             <div id="form2">
                 <li>
-                    <label for="primeiroNome">Primeiro Nome</label>
+                    <label for="primeiroNome" class="acessibilidadeFonte">Primeiro Nome</label>
                     <br>
                     <input class="form-control" type="text" name="primeiroNome" maxlength="150" required>
                 </li>
                 <li>
-                    <label for="sobrenome">Sobrenome</label>
+                    <label for="sobrenome" class="acessibilidadeFonte">Sobrenome</label>
                     <br>
                     <input class="form-control" type="text" name="sobrenome" maxlength="150" required>
                 </li>
-            <button class="form-control button-cadastro" type="submit" name="envia_cadastro" value="professor">CADASTRAR</button>
+            <button class="form-control button-cadastro acessibilidadeFonte" type="submit" name="envia_cadastro" value="professor">CADASTRAR</button>
 
             </div>
         </form>

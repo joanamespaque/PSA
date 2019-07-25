@@ -11,38 +11,38 @@
 </head>
 <body>
         <!-- <div class="caminho"></div> espaço para breadcrumbs -->
-        <h2>Cadastre-se</h2>
+        <h2 class="acessibilidadeFonte">Cadastre-se</h2>
         <div class="formulario row">
             <form action="<?= base_url()?>/cadastro" method="POST"> 
                 <div id="form1">
                     <li>
-                        <label for="email">E-mail</label>
+                        <label class="acessibilidadeFonte" for="email">E-mail</label>
                         <br>
                         <input class="form-control" type="email" name="email" maxlength="200">
                     </li>
                     <li>
-                        <label for="senha">Senha</label>
+                        <label class="acessibilidadeFonte" for="senha">Senha</label>
                         <br>
                         <input class="form-control" type="password" name="senha" maxlength="20">
                     </li>
                     <li>
-                        <label for="verificaSenha">Verificar Senha</label>
+                        <label class="acessibilidadeFonte" for="verificaSenha">Verificar Senha</label>
                         <br>
                         <input class="form-control" type="password" name="verificaSenha" maxlength="20">
                     </li>
                 </div>
                 <div id="form2">
                     <li>
-                        <label for="primerioNome">Primeiro Nome</label>
+                        <label class="acessibilidadeFonte" for="primerioNome">Primeiro Nome</label>
                         <br>
                         <input class="form-control" type="text" name="primerioNome" maxlength="150">
                     </li>
                     <li>
-                        <label for="sobrenome">Sobrenome</label>
+                        <label class="acessibilidadeFonte" for="sobrenome">Sobrenome</label>
                         <br>
                         <input class="form-control" type="text" name="sobrenome" maxlength="150">
                     </li>
-                    <input class="form-control button-cadastro" type="submit" value="CADASTRAR">
+                    <input class="acessibilidadeFonte form-control button-cadastro" type="submit" value="CADASTRAR">
                 </div>
             </form>
         </div>

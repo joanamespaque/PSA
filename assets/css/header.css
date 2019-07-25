@@ -5,14 +5,11 @@
     width: 100%;
     padding: 0px 0px 0px 0px;
 }
-ul.navProfessor{
-    width: 630px!important;
-}
 .atividades{
     margin-left:15px;
     margin-right:15px;
 }
-nav.acessibilidade li {
+nav.acessibilidade button{
 	width: 50px;
 	height: 50px;
 	border: solid 1px black;
@@ -20,8 +17,8 @@ nav.acessibilidade li {
 	font-size: 25px;
 	float: left;
 	margin-right: 6px;
-	padding-top: 7px;
-	margin-left: 0px;
+    margin-left: 0px;
+    background-color:white;
 }
 
 nav.acessibilidade {
@@ -44,7 +41,7 @@ nav.acessibilidade ul {
 ul {
 	list-style-type: none;
 }
-li.altoContraste{
+.altoContraste{
     background-image: url('imagens/alto-contraste.png');
     background-size: 100%;
 }
@@ -54,23 +51,28 @@ li.altoContraste{
 }
 .navBar a{
     color:black;
-    font-size: 18px;
 }
 .navBar ul{
-    width: 240px;
+    width: 620px;
     height:50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0px !important;
+    padding-top:5px;
 }
-.navBar li{
-    padding-top:6px;
-    margin-top:13px;
+
+.navItem{
+    margin-top:7px !important;
+    margin-top:6.5px;
+    margin-bottom:6.5px;
+    font-size: 18px;
+    padding-top:5px;
+    padding-bottom:5px;
     text-align: center;
-    width: 120px;
+    padding-left:20px;
+    padding-right:20px;
     float:left;
-    height: 35px;
 }
 li.active{
     background-color:#8C181B;
@@ -82,13 +84,16 @@ li.active a{
 a:hover{
     text-decoration: none;
 }
+.navbar-header{
+    width:100%;
+}
+.navbar-toggle{
+    margin-right:0px !important;
+}
 
 .navbar-default{
     background-color:#F0A01F;
 }
-/* .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-    height: 60px !important;
-} */
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color:#F0A01F;
 }
@@ -102,18 +107,23 @@ h2{
     text-align: center;
 }
 .logout{
-    float: right;
-    width: 90px;
+    margin-top: 5px;
     font-size: 18px;
     color: white;
     background-color:#8C181B;
-    margin-top: 5px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-left:30px;
+    border-radius: 5px;
 }
-button:hover{
+.logout:hover{
     text-decoration: underline !important;
     color:white !important;
 }
-@media screen and (max-width: 450px) {
+#navInicio{
+    width:200px;
+}
+@media screen and (max-width: 490px) {
 	nav.acessibilidade{
         display: block;
         margin-left: auto;
@@ -141,5 +151,8 @@ button:hover{
     }
     ul.navProfessor, li.active{
         width: 100% !important;    
+    }
+    .logout{
+        background-color:transparent;
     }
 }

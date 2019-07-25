@@ -12,8 +12,8 @@
     <div class="container">
         <div class="botoes">
             <form action="<?= base_url();?>inicio/inicio2" method="POST">
-                <button id="verde" value='professor' name="usuario">PROFESSOR</button>
-                <button id="azul" value="aluno" name="usuario">ALUNO</button>
+                <button id="verde" value='professor' name="usuario" class="acessibilidadeFonte">PROFESSOR</button>
+                <button id="azul" value="aluno" name="usuario" class="acessibilidadeFonte">ALUNO</button>
             </form>
         </div>
     </div>

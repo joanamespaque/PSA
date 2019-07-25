@@ -21,20 +21,20 @@
 				}
 			?>
 		<!-- <div class="caminho"></div>  espaço para breadcrumbs-->
-		<h2>Entre na sua conta</h2>
+		<h2 class="acessibilidadeFonte">Entre na sua conta</h2>
 		<div class="formulario row">
 			<div id="formLogin">
 				<li>
-					<label for="email">Nome de usuário</label>
+					<label for="email" class="acessibilidadeFonte">Nome de usuário</label>
 					<br>
 					<input class="form-control" type="text" name="username" maxlength="150">
 				</li>
 				<li>
-					<label for="senha">Senha</label>
+					<label for="senha" class="acessibilidadeFonte">Senha</label>
 					<br>
 					<input class="form-control" type="password" name="senha" maxlength="20">
 				</li>
-				<input class="form-control button-cadastro" type="submit" value="ENTRAR">
+				<input class="form-control button-cadastro acessibilidadeFonte" type="submit" value="ENTRAR">
 			</div>
         </div>
 	</form>

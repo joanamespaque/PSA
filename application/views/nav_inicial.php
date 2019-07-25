@@ -15,13 +15,17 @@
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navBar" id="bs-example-navbar-collapse-1">
-				<ul>
-					<li class="active inicio">
-						<a href="<?= base_url();?>inicio/inicio">INÍCIO</a>
+				<ul id="navInicio">
+					<a href="<?= base_url();?>inicio/inicio">
+					<li class="active inicio navItem acessibilidadeFonte">
+						INÍCIO
 					</li>
-					<li class="sobre">
-						<a href="<?= base_url();?>sobre/sobre">SOBRE</a>
+					</a>
+					<a href="<?= base_url();?>sobre/sobre">
+					<li class="sobre navItem  acessibilidadeFonte">
+						SOBRE
 					</li>
+				</a>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
