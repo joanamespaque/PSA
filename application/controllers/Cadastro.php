@@ -86,6 +86,7 @@ class Cadastro extends CI_Controller{
                     redirect('cadastro/cadastro_professor');
                 }
             }   
+            //AQUI COMEÇA O ALUNO
         } else if ($botao == 'aluno') {
             $this->form_validation->set_rules('senha', 'Senha', 'required');
             $this->form_validation->set_rules('verificaSenha', 'Verifica Senha', 'matches[senha]|min_length[8]', array('matches' => 'O campo Senha não combina com o campo Verifica Senha', 'min_length' => 'Senha inválida, mínimo de dígitos: 8'));
@@ -104,13 +105,22 @@ class Cadastro extends CI_Controller{
                 $this->load->model('Aluno_model', 'aluno_model');
                 // $inserir = $this->aluno_model->cadastrar($dados);
 
-                if(empty($this->aluno_model->buscarUsuario($dados)->result())){
+                if(empty($this->aluno_model->buscarUserExistente($dados['username'])->result())){
                     $inserir = $this->aluno_model->cadastrar($dados);
                     if ($inserir == True) {
-                        $this->session->set_flashdata('success', 'Cadastro realizado com sucesso.');
-                        $this->session->mark_as_temp('success', 100);
+                        //                
+                        $usuario = $this->aluno_model->buscarUsuario($dados)->result();
 
-                        redirect('login/login_aluno');
+                        $newdata = array(
+                            'nome'  => $usuario[0]->nome,
+                            'sobrenome' => $usuario[0]->sobrenome,
+                            'username' => $usuario[0]->username,
+                            'tipo_user' => 'aluno',
+                            'logged_in' => TRUE
+                        );
+                        $this->session->set_userdata($newdata);
+                        redirect('turmas/turmas_aluno');
+//
                     } else {
                         $this->session->set_flashdata('error', 'Cadastro não pôde ser realizado.');
                         redirect('cadastro/cadastro_aluno');

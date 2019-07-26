@@ -40,6 +40,7 @@ class Login extends CI_Controller{
         } 
         else {
             $this->session->set_flashdata('error', "Usuário ou senha inválidos");
+            redirect('login/login_aluno');
         }
     }
 
@@ -66,6 +67,7 @@ class Login extends CI_Controller{
         } 
         else {
             $this->session->set_flashdata('error', "Usuário ou senha inválidos");
+            redirect('login/login_professor');
         }
 
     }
