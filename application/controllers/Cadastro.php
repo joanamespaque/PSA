@@ -66,6 +66,8 @@ class Cadastro extends CI_Controller{
                     $inserir = $this->professor_model->cadastrar($dados);
                     if ($inserir == True) {
                         $this->session->set_flashdata('brenda', 'Cadastro realizado com sucesso.');
+                        $this->session->mark_as_temp('brenda', 10);
+
                         redirect('login/login_professor');
                     } else {
                         $this->session->set_flashdata('error', 'Cadastro não pôde ser realizado.');
@@ -99,6 +101,8 @@ class Cadastro extends CI_Controller{
                     $inserir = $this->aluno_model->cadastrar($dados);
                     if ($inserir == True) {
                         $this->session->set_flashdata('success', 'Cadastro realizado com sucesso.');
+                        $this->session->mark_as_temp('success', 100);
+
                         redirect('login/login_aluno');
                     } else {
                         $this->session->set_flashdata('error', 'Cadastro não pôde ser realizado.');

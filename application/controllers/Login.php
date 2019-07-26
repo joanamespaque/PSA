@@ -35,9 +35,8 @@ class Login extends CI_Controller{
             );
             $this->session->set_userdata($newdata);
             redirect('turmas/turmas_aluno');
-            // $this->session->set_userdata('Usuario logado', $usuario);
-            // $this->session->set_flashdata('success', "Logado com sucesso");
-            // print_r($newdata);
+            $this->session->set_flashdata('success', "Logado com sucesso");
+            // $this->session->mark_as_temp('success', 10);
         } 
         else {
             $this->session->set_flashdata('error', "Usuário ou senha inválidos");
@@ -60,7 +59,7 @@ class Login extends CI_Controller{
                 'logged_in' => TRUE
             );
             $this->session->set_userdata($newdata);
-            redirect('turmas/turmas_aluno');
+            redirect('turmas/turmas_professor');
             // $this->session->set_userdata('Usuario logado', $usuario);
             // $this->session->set_flashdata('success', "Logado com sucesso");
             // print_r($newdata);
