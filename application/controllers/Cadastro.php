@@ -41,12 +41,10 @@ class Cadastro extends CI_Controller{
     }
 
     public function enviar() {
-        // $this->load->library('form_validation');
         $botao = $_POST['envia_cadastro'];
         if ($botao == 'professor') {
-
             $this->form_validation->set_rules('senha', 'Senha', 'required');
-            $this->form_validation->set_rules('verificaSenha', 'Verifica Senha', 'matches[senha]|min_length[4]', array('matches' => 'O campo Senha não combina com o campo Verifica Senha', 'min_length' => 'Senha inválida, mínimo de dígitos: 8'));
+            $this->form_validation->set_rules('verificaSenha', 'Verifica Senha', 'matches[senha]|min_length[8]', array('matches' => 'O campo Senha não combina com o campo Verifica Senha', 'min_length' => 'Senha inválida, mínimo de dígitos: 8'));
 
             if ($this->form_validation->run() == FALSE) {
             // if ($this->form_validation->run('register_prof') == FALSE) {
@@ -65,10 +63,20 @@ class Cadastro extends CI_Controller{
                 if (empty($this->professor_model->buscarUserExistente($dados['email'], $dados['username'])->result())) {
                     $inserir = $this->professor_model->cadastrar($dados);
                     if ($inserir == True) {
-                        $this->session->set_flashdata('brenda', 'Cadastro realizado com sucesso.');
-                        $this->session->mark_as_temp('brenda', 10);
+//                
+                        $usuario = $this->professor_model->buscarUsuario($dados)->result();
 
-                        redirect('login/login_professor');
+                        $newdata = array(
+                            'nome'  => $usuario[0]->nome,
+                            'sobrenome' => $usuario[0]->sobrenome,
+                            'username' => $usuario[0]->username,
+                            'email' => $usuario[0]->email,
+                            'tipo_user' => 'professor',
+                            'logged_in' => TRUE
+                        );
+                        $this->session->set_userdata($newdata);
+                        redirect('turmas/turmas_professor');
+// 
                     } else {
                         $this->session->set_flashdata('error', 'Cadastro não pôde ser realizado.');
                         redirect('cadastro/cadastro_professor');
@@ -79,9 +87,8 @@ class Cadastro extends CI_Controller{
                 }
             }   
         } else if ($botao == 'aluno') {
-                        
             $this->form_validation->set_rules('senha', 'Senha', 'required');
-            $this->form_validation->set_rules('verificaSenha', 'Verifica Senha', 'matches[senha]', array('matches' => 'O campo Senha não combina com o campo Verifica Senha'));
+            $this->form_validation->set_rules('verificaSenha', 'Verifica Senha', 'matches[senha]|min_length[8]', array('matches' => 'O campo Senha não combina com o campo Verifica Senha', 'min_length' => 'Senha inválida, mínimo de dígitos: 8'));
 
             if ($this->form_validation->run() == FALSE) {
             // if ($this->form_validation->run('register_prof') == FALSE) {

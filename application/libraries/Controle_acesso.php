@@ -8,7 +8,7 @@ class Controle_acesso {
             redirect('inicio/inicio');
         } else if($logged == TRUE) {
             var_dump($_SESSION['tipo_user']);
-            // redirect('turmas/turmas_'.$_SESSION['tipo_user']);
+            redirect('turmas/turmas_'.$_SESSION['tipo_user']);
         } 
     }
 }
