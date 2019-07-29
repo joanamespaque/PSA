@@ -27,12 +27,12 @@
 				<li>
 					<label for="email" class="acessibilidadeFonte">Nome de usuário</label>
 					<br>
-					<input class="form-control" type="text" name="username" maxlength="150">
+					<input class="form-control" type="text" name="username" maxlength="150" value="<?= set_value('username');?>">
 				</li>
 				<li>
 					<label for="senha" class="acessibilidadeFonte">Senha</label>
 					<br>
-					<input class="form-control" type="password" name="senha" maxlength="20">
+					<input class="form-control" type="password" name="senha" maxlength="20" value="<?= set_value('senha');?>">
 				</li>
 				<input class="form-control button-cadastro acessibilidadeFonte" type="submit" value="ENTRAR">
 			</div>
