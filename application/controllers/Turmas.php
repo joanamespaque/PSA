@@ -7,16 +7,22 @@ class Turmas extends CI_Controller{
         // $this->controle_acesso->controlar();
         if($this->session->userdata('logged_in') !== TRUE){
             redirect('inicio/inicio');
-        } 
+        }
     }
 
-    public function turmas_professor(){
-        $this->load->view('header');
-        $this->load->view('nav_usuario');
-        $this->load->view('turmas');
-    }
+    // public function turmas_professor(){
+    //     $this->load->view('header');
+    //     $this->load->view('nav_usuario');
+    //     $this->load->view('turmas_professor');
+    // }
 
-    public function turmas_aluno(){
+    // public function turmas_aluno(){
+    //     $this->load->view('header');
+    //     $this->load->view('nav_usuario');
+    //     $this->load->view('turmas_aluno');
+    // }
+    
+    public function index(){
         $this->load->view('header');
         $this->load->view('nav_usuario');
         $this->load->view('turmas');

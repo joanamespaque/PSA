@@ -31,11 +31,11 @@
 							PERFIL
 						</li>
 					</a>
-					<a href="<?= base_url();?>sobre/sobre">
+					<!-- <a href="<?= base_url();?>sobre/sobre">
 						<li class="sobre acessibilidadeFonte  navItem">
 							SOBRE
 						</li>
-					</a>
+					</a> -->
 					<a href= "<?= base_url();?>login/logout">
 						<li class="logout navItem acessibilidadeFonte">Sair</li>
 					</a>

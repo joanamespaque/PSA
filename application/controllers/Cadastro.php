@@ -3,8 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Cadastro extends CI_Controller{
     public function __construct(){
         parent::__construct();
-        $this->load->library('session');
-
     } 
 
     public function botoes_cadastro(){
@@ -26,7 +24,8 @@ class Cadastro extends CI_Controller{
 
         $this->load->library('session');
 		if($this->session->userdata('username')){
-            redirect('turmas/turmas_aluno');
+            redirect('turmas');
+            // redirect('turmas/turmas_aluno');
 		}
 		else{
             $this->load->view('header');
@@ -86,7 +85,8 @@ class Cadastro extends CI_Controller{
                         'logged_in' => TRUE
                     );
                     $this->session->set_userdata($newdata);
-                    redirect('turmas/turmas_professor');
+                    // redirect('turmas/turmas_professor');
+                    redirect('turmas');
 // 
                 } else {
                     $this->session->set_flashdata('error', 'Cadastro não pôde ser realizado por problema no servidor.');
@@ -135,7 +135,8 @@ class Cadastro extends CI_Controller{
                         'logged_in' => TRUE
                     );
                     $this->session->set_userdata($newdata);
-                    redirect('turmas/turmas_aluno');
+                    // redirect('turmas/turmas_aluno');
+                    redirect('turmas');
 //
                 } else {
                     $this->session->set_flashdata('error', 'Cadastro não pôde ser realizado por problema no servidor.');

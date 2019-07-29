@@ -34,7 +34,7 @@ class Login extends CI_Controller{
                 'logged_in' => TRUE
             );
             $this->session->set_userdata($newdata);
-            redirect('turmas/turmas_aluno');
+            redirect('turmas');
             $this->session->set_flashdata('success', "Logado com sucesso");
             // $this->session->mark_as_temp('success', 10);
         } 
@@ -62,7 +62,7 @@ class Login extends CI_Controller{
                 'logged_in' => TRUE
             );
             $this->session->set_userdata($newdata);
-            redirect('turmas/turmas_professor');
+            redirect('turmas');
             // $this->session->set_userdata('Usuario logado', $usuario);
             // $this->session->set_flashdata('success', "Logado com sucesso");
             // print_r($newdata);
@@ -78,7 +78,7 @@ class Login extends CI_Controller{
 
     public function logout() {
         $this->session->sess_destroy();
-        redirect("inicio/inicio");
+        redirect('inicio/inicio');
     }
 }
 ?>

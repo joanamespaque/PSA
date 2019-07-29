@@ -9,6 +9,7 @@
     <title>Página Inicial</title>
 </head>
 <body>
+    <?= $_SERVER['PATH_INFO'];?>
 
     <div class="container">
         <div class="botoes">

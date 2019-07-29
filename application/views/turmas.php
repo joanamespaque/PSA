@@ -12,7 +12,7 @@
 
 <body>
 	<div class="container">
-		<?php if(($this->session->userdata('tipo_user') == 'aluno') && (current_url() == base_url().'turmas/turmas_aluno')) {?>
+		<?php if(($this->session->userdata('tipo_user') == 'aluno')) {?>
 			<div class="turmasList">
 				<!-- adicionar o id da turma ao id="turma" -->
 				<div id="turma">
@@ -24,7 +24,7 @@
 				</div>
 				<!-- Esse botao só deve aparecer se um professor estiver logado: -->
 			</div>
-		<?php } else if(($this->session->userdata('tipo_user') == 'professor') && (current_url() == base_url().'turmas/turmas_professor')) { ?>
+		<?php } else if(($this->session->userdata('tipo_user') == 'professor')) { ?>
 				<div class="turmasList">
 					<!-- adicionar o id da turma ao id="turma" -->
 					<div id="turma">

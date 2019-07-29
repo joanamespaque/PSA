@@ -7,9 +7,8 @@ class Inicio extends CI_Controller{
         // $this->controle_acesso->controlar();
         
         if ($this->session->userdata('logged_in') == TRUE) {
-            redirect('turmas/turmas_'.$_SESSION['tipo_user']);
-        }
-
+            redirect('turmas');
+        } 
     }
 
     public function inicio(){
@@ -19,6 +18,9 @@ class Inicio extends CI_Controller{
     }
 
     public function inicio2(){
+        if (($_SERVER['PATH_INFO'] == 'inicio/inicio2')) {
+            redirect('inicio/inicio');
+        }
         $this->load->view('header');
         $this->load->view('nav_inicial');
         $this->load->view('pagina_inicial2');
