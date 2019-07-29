@@ -11,10 +11,11 @@ class Turmas_model extends CI_Model {
     }
     // LISTAR OS ALUNOS DA TURMA
     public function listarAlunoTurma() {
-        $this->db->select('*');
+        $this->db->select('turma.id, turma.nome, turma.idprofessor, count(alunoturma.idaluno)' );
         $this->db->from('turma');
         $this->db->join('alunoturma', 'turma.id = alunoturma.idturma');
         $this->db->join('aluno', 'alunoturma.idaluno = aluno.id');
+        $this->db->group_by('turma.id');
         // $this->db->where('turma.id', $valor);        BUSCA COM ID 
         $result = $this->db->get();
 

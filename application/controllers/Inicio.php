@@ -17,15 +17,6 @@ class Inicio extends CI_Controller{
             $this->load->view('pagina_inicial');
     }
 
-    // public function inicio2(){
-    //     if (($_SERVER['PATH_INFO'] == 'inicio/inicio2')) {
-    //         redirect('inicio/inicio');
-    //     }
-    //     $this->load->view('header');
-    //     $this->load->view('nav_inicial');
-    //     $this->load->view('pagina_inicial2');
-    // }
-
     public function verifica_acao() {
         $tipo = $_POST['tipo'];
         switch($tipo) {
