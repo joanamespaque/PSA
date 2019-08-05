@@ -34,7 +34,6 @@
 	<script>
 		document.querySelector('.active').classList.remove('active');
 		document.querySelector('.turmas').classList.add('active');
-
 	</script>
 </body>
 

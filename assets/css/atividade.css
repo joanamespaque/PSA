@@ -25,11 +25,12 @@ p{
     line-height: 90px;
 }
 .opcoes{
+    display: none;
     background-color:#8C181B;
     color: white;
     width: 230px;
     border-radius: 10px;
-    height: 100px;
+    /* height: 100px; */
     position: absolute;
     z-index: 9999;
     left: 50%;
