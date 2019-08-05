@@ -25,7 +25,7 @@ class Professor_model extends CI_Model {
         $this->db->select('*');
         $this->db->from('professor');
         $this->db->where("username='".$login['username']."' and senha='".$login['senha']."'");
-        $result = $this->get();
+        $result = $this->db->get();
 
         return $result;
     }

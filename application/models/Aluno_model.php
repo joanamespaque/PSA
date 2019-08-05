@@ -37,4 +37,14 @@ class Aluno_model extends CI_Model {
         return $result;
         
     }
+
+
+    public function buscarUserExistente($username) {
+        $this->db->select('id');
+        $this->db->from('aluno');
+        $this->db->where("username='".$username."'");
+        $result = $this->db->get();
+
+        return $result;
+    }
 }

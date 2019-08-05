@@ -13,12 +13,12 @@
 
 <body>
 	<form action="<?= base_url() ?>login/autenticarProfessor" method="POST">
-			<?php if($this->session->flashdata('success')) {?>
-					<div class="alert alert-success text-center" style="margin-top:20px;">
-						<?php echo $this->session->flashdata('success'); ?>
+			<?php if($this->session->flashdata('error')) {?>
+					<div class="alert alert-danger text-center" style="margin-top:20px;">
+						<?php echo $this->session->flashdata('error'); ?>
 					</div>
 					<?php
-				}
+				} 
 			?>
 		<!-- <div class="caminho"></div>  espaço para breadcrumbs-->
 		<h2 class="acessibilidadeFonte">Entre na sua conta</h2>
@@ -27,12 +27,12 @@
 				<li>
 					<label for="email" class="acessibilidadeFonte">Nome de usuário</label>
 					<br>
-					<input class="form-control" type="text" name="username" maxlength="150">
+					<input class="form-control" type="text" name="username" maxlength="150" value="<?= set_value('username');?>">
 				</li>
 				<li>
 					<label for="senha" class="acessibilidadeFonte">Senha</label>
 					<br>
-					<input class="form-control" type="password" name="senha" maxlength="20">
+					<input class="form-control" type="password" name="senha" maxlength="20" value="<?= set_value('senha');?>">
 				</li>
 				<input class="form-control button-cadastro acessibilidadeFonte" type="submit" value="ENTRAR">
 			</div>

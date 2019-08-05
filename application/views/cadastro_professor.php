@@ -24,33 +24,33 @@
                 <li>
                     <label for="email" class="acessibilidadeFonte">E-mail</label>
                     <br>
-                    <input class="form-control" type="email" name="email" maxlength="200" required>
+                    <input class="form-control" type="email" name="email" maxlength="200" value="<?= set_value('email');?>" required>
                 </li>
                 <li>
                     <label for="username" class="acessibilidadeFonte">Nome de usuário</label>
                     <br>
-                    <input class="form-control" type="text" name="username" maxlength="150" required>
+                    <input class="form-control" type="text" name="username" maxlength="150" value="<?= set_value('username');?>" required>
                 </li>
                 <li>
                     <label for="senha" class="acessibilidadeFonte">Senha</label>
                     <br>
                     
-                    <input class="form-control" type="password" name="senha" maxlength="20" required>
+                    <input class="form-control" type="password" name="senha" maxlength="20" value="<?= set_value('senha');?>" required>
                 </li>
                 <li>
                     <label for="verificaSenha" class="acessibilidadeFonte">Verificar Senha</label>
                     <br>
-                    <input class="form-control" type="password" name="verificaSenha" maxlength="20" required>
+                    <input class="form-control" type="password" name="verificaSenha" maxlength="20" value="<?= set_value('verificaSenha');?>" required>
                 </li>
                 <li>
                     <label for="primeiroNome" class="acessibilidadeFonte">Primeiro Nome</label>
                     <br>
-                    <input class="form-control" type="text" name="primeiroNome" maxlength="150" required>
+                    <input class="form-control" type="text" name="primeiroNome" maxlength="150" value="<?= set_value('primeiroNome');?>" required>
                 </li>
                 <li>
                     <label for="sobrenome" class="acessibilidadeFonte">Sobrenome</label>
                     <br>
-                    <input class="form-control" type="text" name="sobrenome" maxlength="150" required>
+                    <input class="form-control" type="text" name="sobrenome" maxlength="150" value="<?= set_value('sobrenome');?>" required>
                 </li>
             <button class="button-cadastro cadastroUsuario acessibilidadeFonte" type="submit" name="envia_cadastro" value="professor">CADASTRAR</button>
         </form>

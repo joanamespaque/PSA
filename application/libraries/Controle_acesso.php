@@ -2,13 +2,15 @@
 
 class Controle_acesso {
 
-    public function controlar () {
-
+ public function controlar(){
         $CI =& get_instance();
-        $user = $CI->session->userdata('username');
-        if ($user == "") {
-            redirect('login');
-        } 
 
+    if($CI->session->userdata('logged_in') !== TRUE){
+        redirect('inicio/inicio');
+    }   else {
+            redirect('turmas/turmas_'.$_SESSION['tipo_user']);
+        }
     }
+
 }
+
