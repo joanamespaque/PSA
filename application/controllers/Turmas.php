@@ -10,11 +10,11 @@ class Turmas extends CI_Controller{
         }
     }
 
-    // public function turmas_professor(){
-    //     $this->load->view('header');
-    //     $this->load->view('nav_usuario');
-    //     $this->load->view('turmas_professor');
-    // }
+    public function turmas_professor(){
+        $this->load->view('header');
+        $this->load->view('nav_usuario');
+        $this->load->view('turmas_professor');
+    }
 
     // public function turmas_aluno(){
     //     $this->load->view('header');
