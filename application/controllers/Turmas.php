@@ -34,10 +34,12 @@ class Turmas extends CI_Controller{
             // $data['counts'] = array("");
 
             $this->load->view('turmas', $data);
-        } else {
+        } else if ($this->session->userdata('tipo_user') == 'professor') {
             // model que pega ass turmas do turmas_professor
             // $this->load->view('turmas', dados);
-
+            $this->load->model('Turmas_model', 'turmas_model');
+            $data['turmas'] = $this->turmas_model->listarAlunoTurma()->result();
+            $this->load->view('turmas', $data);
         }
     }
 }

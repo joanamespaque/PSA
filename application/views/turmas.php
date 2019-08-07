@@ -27,13 +27,17 @@
 		<?php } else if(($this->session->userdata('tipo_user') == 'professor')) { ?>
 				<div class="turmasList">
 					<!-- adicionar o id da turma ao id="turma" -->
-					<div id="turma">
+					<?php 
+				foreach ($turmas as $turma) { ?>
+					<div id="turma<?= $turma->id?>" class="turma">    
+					
 						<a href="">
-							<p class="nome acessibilidadeFonte">Turma</p> <!-- colocar com php o nome da turma -->
-							<output class="acessibilidadeFonte"> 9999 aluno(s)</output>
+							<p class="nome acessibilidadeFonte"><?= $turma->nome;?></p> <!-- colocar com php o nome da turma -->
+							<output class="acessibilidadeFonte"><?= $turma->count; ?> aluno(s)</output>
 							<!-- colocar com php o numero de alunos cadastrados na turma -->
 						</a>
 					</div>
+						<?php } ?>
 					<!-- Esse botao só deve aparecer se um professor estiver logado: -->
 					<div class="button">
 						<a href="<?= base_url()?>cadastro/cadastro_turma">

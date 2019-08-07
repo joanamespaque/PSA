@@ -18,25 +18,23 @@ class Cadastro extends CI_Controller{
     }
 
     public function cadastro_aluno(){
-        // $this->load->view('header');
-        // $this->load->view('nav_inicial');
-        // $this->load->view('cadastro_aluno');
-
-        $this->load->library('session');
-		if($this->session->userdata('username')){
-            redirect('turmas');
-            // redirect('turmas/turmas_aluno');
-		}
-		else{
-            $this->load->view('header');
-            $this->load->view('nav_inicial');
-            $this->load->view('cadastro_aluno');
-		}
+        $this->load->view('header');
+        $this->load->view('nav_inicial');
+        $this->load->view('cadastro_aluno');
     }
+
     public function cadastro_turma(){
+        // restringir acesso de cadastro
+        if($this->session->userdata('logged_in') !== TRUE){
+            redirect('inicio/inicio');
+        } else if(($this->session->userdata('tipo_user') == 'aluno')) {
+            redirect('turmas');
+        } else {
+
         $this->load->view('header');
         $this->load->view('nav_usuario');
         $this->load->view('cadastro_turma');
+        }
     }
 
     public function enviar() {
