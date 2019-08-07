@@ -16,12 +16,12 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navBar" id="bs-example-navbar-collapse-1">
 				<ul class="navProfessor">
-					<a href="<?= base_url();?>Turmas/turmas_professor">
+					<a href="<?= base_url();?>turmas">
 						<li class="active turmas acessibilidadeFonte navItem">
 							TURMAS
 						</li>
 					</a>
-					<a href="<?= base_url();?>Atividades/atividades_professor">
+					<a href="<?= base_url();?>atividades/atividades_professor">
 						<li class="atividades acessibilidadeFonte  navItem">
 							ATIVIDADES
 						</li>
@@ -49,7 +49,7 @@
 		</div>
 		<!-- /.container-fluid -->
 	</nav>
-            <p><?php var_dump($_SESSION); ?></p>
+            <!-- <p><?php // var_dump($_SESSION); ?></p> -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="<?= base_url();?>assets/bootstrap/js/bootstrap.min.js"></script>

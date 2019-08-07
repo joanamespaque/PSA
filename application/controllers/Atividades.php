@@ -14,5 +14,11 @@ class Atividades extends CI_Controller{
         $this->load->view('atividades');
     }
 
+    public function atividades_aluno(){
+        $this->load->view('header');
+        $this->load->view('nav_usuario');
+        $this->load->view('atividades');
+    }
+
 
 }
