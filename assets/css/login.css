@@ -30,13 +30,22 @@ div.botoes{
     width: 280px;
 }
 .formulario, label, div.botoes, a, #formLogin, input.form-control{
-    display: block;
+    /* display: block;
     margin-left:auto;
-    margin-right:auto;
+    margin-right:auto; */
+    display: block;
+margin-left: auto;
+margin-right: auto;
+max-width: 100%;
 }
-.formulario{
+/* .formulario{
     width: 640px;
     margin-top:40px;
+} */
+.formulario{
+    width: 580px;
+    padding-left:20px;
+    max-width: 100%;
 }
 #form1 p{
     display: block;
@@ -66,7 +75,7 @@ input.form-control{
 }
 
 #formLogin input.form-control{
-    width:300px;
+    width:250px;
 }
 @media screen and (max-width: 650px) {
     .formulario, div.formulario li{

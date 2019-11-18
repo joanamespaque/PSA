@@ -12,7 +12,10 @@
 </head>
 
 <body>
+<h2 class="acessibilidadeFonte">Entre na sua conta</h2>
+<div class="formulario row">
 	<form action="<?= base_url() ?>login/autenticarProfessor" method="POST">
+		<!-- <div class="caminho"></div>  espaço para breadcrumbs-->
 			<?php if($this->session->flashdata('error')) {?>
 					<div class="alert alert-danger text-center" style="margin-top:20px;">
 						<?php echo $this->session->flashdata('error'); ?>
@@ -20,9 +23,8 @@
 					<?php
 				} 
 			?>
-		<!-- <div class="caminho"></div>  espaço para breadcrumbs-->
-		<h2 class="acessibilidadeFonte">Entre na sua conta</h2>
-		<div class="formulario row">
+
+		<!-- <div class="formulario row"> -->
 			<div id="formLogin">
 				<li>
 					<label for="email" class="acessibilidadeFonte">Nome de usuário</label>
@@ -36,8 +38,9 @@
 				</li>
 				<input class="form-control button-cadastro acessibilidadeFonte" type="submit" value="ENTRAR">
 			</div>
-        </div>
+        <!-- </div> -->
 	</form>
+</div>
 	<script>
 		document.querySelector('.active').classList.remove('active');
 
