@@ -25,16 +25,16 @@ class Cadastro extends CI_Controller{
 
     public function cadastro_turma(){
         // restringir acesso de cadastro
-        if($this->session->userdata('logged_in') !== TRUE){
-            redirect('inicio/inicio');
-        } else if(($this->session->userdata('tipo_user') == 'aluno')) {
-            redirect('turmas');
-        } else {
+        // if($this->session->userdata('logged_in') !== TRUE){
+        //     redirect('inicio/inicio');
+        // } else if(($this->session->userdata('tipo_user') == 'aluno')) {
+        //     redirect('turmas');
+        // } else {
 
         $this->load->view('header');
         $this->load->view('nav_usuario');
         $this->load->view('cadastro_turma');
-        }
+        // }
     }
 
     public function enviar() {
@@ -47,7 +47,7 @@ class Cadastro extends CI_Controller{
             $professor = $this->professor_model->buscarUserExistente($email,$username)->result();
 
             $this->form_validation->set_rules('senha', 'Senha', 'required');
-            $this->form_validation->set_rules('verificaSenha', 'Verifica Senha', 'matches[senha]|min_length[8]', array('matches' => 'O campo Senha não combina com o campo Verifica Senha', 'min_length' => 'Senha inválida, mínimo de dígitos: 8'));
+            $this->form_validation->set_rules('verificaSenha', 'Verifica Senha', 'matches[senha]|min_length[8]', array('matches' => 'Os campos de senha não combinam', 'min_length' => 'Senha inválida, mínimo de dígitos: 8'));
             $this->load->helper('email');
             $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|is_unique[professor.email]', array('valid_email'=> 'O e-mail inserido é inválido', 'is_unique' => 'O e-mail inserido já existe'));
 
@@ -101,7 +101,7 @@ class Cadastro extends CI_Controller{
             $aluno = $this->aluno_model->buscarUserExistente($username)->result();
 
             $this->form_validation->set_rules('senha', 'Senha', 'required');
-            $this->form_validation->set_rules('verificaSenha', 'Verifica Senha', 'matches[senha]|min_length[8]', array('matches' => 'O campo Senha não combina com o campo Verifica Senha', 'min_length' => 'Senha inválida, mínimo de dígitos: 8'));
+            $this->form_validation->set_rules('verificaSenha', 'Verifica Senha', 'matches[senha]|min_length[8]', array('matches' => 'Os campos de senha não combinam', 'min_length' => 'Senha inválida, mínimo de dígitos: 8'));
             if ($aluno) {
                 $this->form_validation->set_rules('username', 'Nome de usuário', 'is_unique[aluno.username]', array('is_unique'=>'O nome de usuário inserido já existe'));
             }

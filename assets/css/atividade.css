@@ -65,6 +65,17 @@ ul{
     border:none;
     font-size: 20px;
 }
+
+button.close {
+    font-size: 35px;
+}
+.modal{
+    color:black;
+}
+.modal-title{
+    font-size: 20px;
+    width: 80%;
+}
 @media screen and (max-width: 1100px) {
     .listaAtividades{
         width: 800px;

@@ -1,10 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="<?= base_url();?>assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= base_url();?>assets/css/header.css" media="all">
     <link rel="stylesheet" href="<?= base_url();?>assets/css/cadastro.css">
     <title>Cadastro Professor</title>
@@ -14,13 +10,15 @@
         <h2 class="acessibilidadeFonte">Cadastre-se</h2>
         <div class="formulario row">
             <form action="<?= base_url()?>cadastro/enviar" method="POST"> <!-- Aqui falta o caminho -->
+            <div class="msg">
             <?php if($this->session->flashdata('error')){?>
 					<div class="alert alert-danger text-center" style="margin-top:20px;">
 						<?php echo $this->session->flashdata('error'); ?>
 					</div>
-					<?php
-				}
-			?>
+			<?php }	?>
+
+            </div>
+            
                 <li>
                     <label for="email" class="acessibilidadeFonte">E-mail</label>
                     <br>
@@ -29,7 +27,7 @@
                 <li>
                     <label for="username" class="acessibilidadeFonte">Nome de usuário</label>
                     <br>
-                    <input class="form-control" type="text" name="username" maxlength="150" value="<?= set_value('username');?>" required>
+                    <input class="form-control" type="text" name="username" maxlength="20" value="<?= set_value('username');?>" required>
                 </li>
                 <li>
                     <label for="senha" class="acessibilidadeFonte">Senha</label>
@@ -58,6 +56,7 @@
     <script>
         document.querySelector('.active').classList.remove('active');
     </script>
+    <script src="<?= base_url();?>assets/js/mensagem.js"></script>
 </body>
 
 </html>
