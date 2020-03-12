@@ -23,7 +23,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost:2000/estagio';
+
+// Rodando o comando php -S localhost:2000 DENTRO da pasta estagio. Acessando a página inicial pela url http://localhost:2000/inicio/inicio
+$config['base_url'] = 'http://localhost:2000';
 /*
 |--------------------------------------------------------------------------
 | Index File

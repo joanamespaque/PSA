@@ -8,6 +8,8 @@
 </head>
 
 <body>
+<h2 class="acessibilidadeFonte">Entre na sua conta</h2>
+<div class="formulario row">
 	<form action="<?= base_url() ?>login/autenticarProfessor" method="POST">
 		<div class="msgLogin">
 			<?php if($this->session->flashdata('error')) {?>
@@ -32,8 +34,9 @@
 				</li>
 				<input class="form-control button-cadastro acessibilidadeFonte" type="submit" value="ENTRAR">
 			</div>
-        </div>
+        <!-- </div> -->
 	</form>
+</div>
 	<script>
 		document.querySelector('.active').classList.remove('active');
 	</script>
