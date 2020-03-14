@@ -24,7 +24,6 @@ class Turmas extends CI_Controller{
     
     public function index(){
         $this->load->view('header');
-        $this->load->view('nav_usuario');
         if($this->session->userdata('tipo_user') == 'aluno') {
             $this->load->model('Turmas_model', 'turmas_model');
             $data['turmas'] = $this->turmas_model->listarAlunoTurma()->result();

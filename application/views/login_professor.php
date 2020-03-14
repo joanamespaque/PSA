@@ -18,8 +18,6 @@
 					</div>
 			<?php } ?>
 		</div>
-		<!-- <div class="caminho"></div>  espaço para breadcrumbs-->
-		<h2 class="acessibilidadeFonte">Entre na sua conta</h2>
 		<div class="formulario row">
 			<div id="formLogin">
 				<li>

@@ -8,14 +8,12 @@ class Login extends CI_Controller{
 
     public function login_professor(){
         $this->load->view('header');
-        $this->load->view('nav_inicial');
         $this->load->view('login_professor');
         // $this->autenticar();
     }
 
     public function login_aluno(){
             $this->load->view('header');
-            $this->load->view('nav_inicial');
             $this->load->view('login_aluno');
     }
 
@@ -41,7 +39,6 @@ class Login extends CI_Controller{
         else {
             $this->session->set_flashdata('error', "Usuário e/ou senha inválidos");
             $this->load->view('header');
-            $this->load->view('nav_inicial');
             $this->load->view('login_aluno');
         }
     }
@@ -54,6 +51,7 @@ class Login extends CI_Controller{
 
         if(!empty($usuario)) {
             $newdata = array(
+                'id'  => $usuario[0]->id,
                 'nome'  => $usuario[0]->nome,
                 'sobrenome' => $usuario[0]->sobrenome,
                 'username' => $usuario[0]->username,
@@ -70,7 +68,6 @@ class Login extends CI_Controller{
         else {
             $this->session->set_flashdata('error', "Usuário e/ou senha inválidos");
             $this->load->view('header');
-            $this->load->view('nav_inicial');
             $this->load->view('login_professor');
         }
 

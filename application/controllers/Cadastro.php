@@ -7,36 +7,32 @@ class Cadastro extends CI_Controller{
 
     public function botoes_cadastro(){
         $this->load->view('header');
-        $this->load->view('nav_inicial');
         $this->load->view('botoes_cadastro');
     }
 
     public function cadastro_professor(){
         $this->load->view('header');
-        $this->load->view('nav_inicial');
         $this->load->view('cadastro_professor');
     }
 
     public function cadastro_aluno(){
         $this->load->view('header');
-        $this->load->view('nav_inicial');
         $this->load->view('cadastro_aluno');
     }
 
     public function cadastro_turma(){
-        // restringir acesso de cadastro
-        // if($this->session->userdata('logged_in') !== TRUE){
-        //     redirect('inicio/inicio');
-        // } else if(($this->session->userdata('tipo_user') == 'aluno')) {
-        //     redirect('turmas');
-        // } else {
+        if($this->session->userdata('logged_in') !== TRUE){
+            redirect('inicio/inicio');
+        } else if(($this->session->userdata('tipo_user') == 'aluno')) {
+            redirect('turmas');
+        } else {
 
         $this->load->view('header');
-        $this->load->view('nav_usuario');
         $this->load->view('cadastro_turma');
         // }
     }
-
+    }
+    
     public function enviar() {
         $botao = $_POST['envia_cadastro'];
         if ($botao == 'professor') {
@@ -58,7 +54,6 @@ class Cadastro extends CI_Controller{
             if ($this->form_validation->run() == FALSE ) {
                 $this->session->set_flashdata('error', validation_errors());
                 $this->load->view('header');
-                $this->load->view('nav_inicial');
                 $this->load->view('cadastro_professor');
 
             } else {
@@ -110,7 +105,6 @@ class Cadastro extends CI_Controller{
 
                 $this->session->set_flashdata('error', validation_errors());
                 $this->load->view('header');
-                $this->load->view('nav_inicial');
                 $this->load->view('cadastro_aluno');
 
             } else {

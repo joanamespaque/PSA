@@ -6,23 +6,21 @@
     <title>Cadastro de Turma</title>
 </head>
 <body>
+<?php 
+var_dump(intval($this->session->userdata('id')));
+?>
         <div class="formularioTurma row">
                 <div id="cadastroTurma">
-                    <li>
+                    <div>
                         <label for="nomeTurma" class="acessibilidadeFonte">Nome da turma:</label>
                         <br>
-                        <input class="form-control" type="text" name="nomeTurma" maxlength="150">
-                    </li>
-                    <li>
-                        <label for="assunto" class="acessibilidadeFonte">Assunto:</label>
+                        <input class="form-control acessibilidadeFonte" type="text" name="nomeTurma" maxlength="150" required>
+                    </div>
+                    <div>
+                        <label for="sala" class="acessibilidadeFonte">Sala (opcional):</label>
                         <br>
-                        <input class="form-control" type="text" name="assunto" maxlength="20">
-                    </li>
-                    <li>
-                        <label for="sala" class="acessibilidadeFonte">Sala:</label>
-                        <br>
-                        <input class="form-control" type="text" name="sala" maxlength="20">
-                    </li>
+                        <input class="form-control acessibilidadeFonte" type="text" name="sala" maxlength="10">
+                    </div>
                     <input class="button-cadastro turma acessibilidadeFonte" type="submit" value="CADASTRAR TURMA">
                 </div>
         </div>
